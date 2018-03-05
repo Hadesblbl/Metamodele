@@ -30,5 +30,11 @@
     <ClInclude Include="ValueModel.h">
       <Filter>Fichiers d%27en-tête\core</Filter>
     </ClInclude>
+    <ClInclude Include="BinaryExpression.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryExpressionModel.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
