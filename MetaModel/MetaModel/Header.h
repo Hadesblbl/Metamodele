@@ -2,8 +2,8 @@
 #define And_h
 #include "BinaryExpression.h";
 using namespace core;
-class And : public BinaryExpressions {
+class And : public BinaryExpression {
 
-}
+};
 
 #endif /* And_h */

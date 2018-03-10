@@ -18,22 +18,46 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Expression.h">
-      <Filter>Fichiers d%27en-tête\core</Filter>
-    </ClInclude>
-    <ClInclude Include="UnaryExpressionModel.h">
-      <Filter>Fichiers d%27en-tête\core</Filter>
-    </ClInclude>
-    <ClInclude Include="UnaryExpression.h">
-      <Filter>Fichiers d%27en-tête\core</Filter>
-    </ClInclude>
-    <ClInclude Include="ValueModel.h">
-      <Filter>Fichiers d%27en-tête\core</Filter>
-    </ClInclude>
     <ClInclude Include="BinaryExpression.h">
-      <Filter>Fichiers d%27en-tête\core</Filter>
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="BinaryExpressionModel.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Expression.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="UnaryExpression.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="UnaryExpressionModel.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueModel.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="And.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AndMin.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AndMult.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Or.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="OrMax.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="OrPlus.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Then.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="ThenMin.h">
       <Filter>Fichiers d%27en-tête\core</Filter>
     </ClInclude>
   </ItemGroup>
