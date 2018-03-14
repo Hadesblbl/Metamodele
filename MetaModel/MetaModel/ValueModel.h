@@ -3,7 +3,7 @@
 #include "Expression.h";
 
 template <class T>
-class ValueModel : public Expression {
+class ValueModel : public Expression<T> {
 	private:
 		T value;
 	public:
@@ -11,12 +11,12 @@ class ValueModel : public Expression {
 	};
 
 template <class T>
-void ValueModel::setValue(T v) {
+void ValueModel<T>::setValue(T v) {
 	value = v;
 };
 
 template <class T>
-T ValueModel::Expression::evaluate() const {
+T ValueModel<T>::Expression<T>::evaluate() const {
 	return value;
 }
 #endif // !VALUE_H

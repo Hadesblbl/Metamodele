@@ -1,19 +1,19 @@
-#ifndef AndMult_h
-#define AndMult_h
+#ifndef ThenMult_h
+#define ThenMult_h
 #include "BinaryExpression.h";
-#include "And.h";
+#include "Then.h";
 
 using namespace core;
 template <class T>
-class AndMult : public And<T> {
+class ThenMult : public Then<T> {
 
 };
 
 template <class T>
-T AndMult<T>::evaluate(Expression<T> *l, Expression<T> *r) {
+T ThenMult<T>::evaluate(Expression *l, Expression *r) {
 	T left = l->evaluate();
 	T right = r->evaluate();
 	return left * right;
 }
 
-#endif /* AndMult_h */
+#endif /* ThenMult_h */

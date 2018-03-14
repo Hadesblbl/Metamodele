@@ -16,6 +16,9 @@
     <Filter Include="Fichiers d%27en-tête\core">
       <UniqueIdentifier>{e5777131-a7b2-43c0-afab-b28ea6f20a66}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Fuzzy">
+      <UniqueIdentifier>{847ebda1-66e7-4111-8a4c-0d7bd7ccce11}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryExpression.h">
@@ -60,5 +63,28 @@
     <ClInclude Include="ThenMin.h">
       <Filter>Fichiers d%27en-tête\core</Filter>
     </ClInclude>
+    <ClInclude Include="Agg.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="ThenMult.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AggMax.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="AggPlus.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="MamdaniDefuzz.h">
+      <Filter>Fichiers d%27en-tête\Fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="CogDefuzz.h">
+      <Filter>Fichiers d%27en-tête\Fuzzy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

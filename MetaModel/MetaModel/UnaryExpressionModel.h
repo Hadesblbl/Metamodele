@@ -3,20 +3,21 @@
 #include "UnaryExpression.h";
 #include "Expression.h";
 
-class UnaryExpressionModel : public UnaryExpression , public Expression {
+template <class T>
+class UnaryExpressionModel : public UnaryExpression<T> , public Expression<T> {
 };
 
 template <class T>
-T UnaryExpressionModel::UnaryExpression::evaluate(Expression *o) const {
+T UnaryExpressionModel<T>::UnaryExpression<T>::evaluate(Expression *o) const {
 	if (operator!=null) {
-		return operator.evaluate(*o);
+		return operator.evaluate(o);
 	}
 };
 
 template <class T>
-T UnaryExpressionModel::Expression::evaluate() const {
+T UnaryExpressionModel<T>::Expression<T>::evaluate() const {
 	if (operand != null) {
-		return evaluate(*operand);
+		return evaluate(operand);
 	}
 };
 #endif // !UNARYEXPRESSIONMODEL_H

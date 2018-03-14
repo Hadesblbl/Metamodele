@@ -4,13 +4,16 @@
 #include "Then.h";
 
 using namespace core;
-class ThenMin : public Then {
+template <class T>
+class ThenMin : public Then<T> {
 
 };
 
 template <class T>
-T ThenMin::BinaryExpression::evaluate(Expression l, Expression r) {
-	return std::min(evaluate(l),evaluate(r));
+T ThenMin<T>::evaluate(Expression *l, Expression *r) {
+	T left = l->evaluate();
+	T right = r->evaluate();
+	return std::min(left,right);
 }
 
 #endif /* ThenMin_h */

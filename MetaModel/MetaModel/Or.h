@@ -2,7 +2,8 @@
 #define Or_h
 #include "BinaryExpression.h";
 using namespace core;
-class Or : public BinaryExpressions {
+template <class T>
+class Or : public BinaryExpression<T>{
 
 }
 

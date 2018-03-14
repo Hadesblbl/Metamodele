@@ -2,7 +2,8 @@
 #define Then_h
 #include "BinaryExpression.h";
 using namespace core;
-class Then : public BinaryExpressions {
+template <class T>
+class Then : public BinaryExpression<T> {
 
 }
 

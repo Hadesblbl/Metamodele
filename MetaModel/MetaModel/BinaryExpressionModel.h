@@ -3,18 +3,19 @@
 #include "BinaryExpression.h";
 #include "Expression.h";
 
-	class BinaryExpressionModel : public BinaryExpression, public Expression {
+template <class T>
+	class BinaryExpressionModel : public BinaryExpression<T>, public Expression<T> {
 	};
 
 	template <class T>
-	T BinaryExpressionModel::BinaryExpression::evaluate(Expression *l,Expression *r) const {
+	T BinaryExpressionModel<T>::BinaryExpression<T>::evaluate(Expression *l,Expression *r) const {
 		if (operator!=null) {
 			return operator.evaluate(l,r);
 		}
 	};
 
 	template <class T>
-	T BinaryExpressionModel::Expression::evaluate() const {
+	T BinaryExpressionModel<T>::Expression<T>::evaluate() const {
 		if (l != null && r != null) {
 			return evaluate(l,r);
 		}
