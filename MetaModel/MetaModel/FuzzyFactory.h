@@ -1,7 +1,7 @@
 #ifndef FUZZYFACTORY_H
 #define FUZZYFACTORY_H
 
-class FuzzyFactory{
+class FuzzyFactory : ExpressionFactory{
     public:
         Expression newAnd(Expression,Expression);
         Expression newOr(Expression,Expression);
@@ -11,6 +11,5 @@ class FuzzyFactory{
         void changeAnd(And);
         void changeOr(Or);
         void changeThen(Then);
-
 }
 #endif
