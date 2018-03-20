@@ -2,6 +2,7 @@
 #define VALUE_H
 #include "Expression.h";
 
+using namespace core;
 template <class T>
 class ValueModel : public Expression<T> {
 	private:

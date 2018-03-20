@@ -8,16 +8,18 @@ class UnaryExpressionModel : public UnaryExpression<T> , public Expression<T> {
 };
 
 template <class T>
-T UnaryExpressionModel<T>::UnaryExpression<T>::evaluate(Expression *o) const {
-	if (operator!=null) {
-		return operator.evaluate(o);
+T UnaryExpressionModel<T>::evaluate(Expression *o) const {
+	if (operator==null) {
+		throw NullOperatorException;
 	}
+	return operator.evaluate(o);
 };
 
 template <class T>
-T UnaryExpressionModel<T>::Expression<T>::evaluate() const {
-	if (operand != null) {
-		return evaluate(operand);
+T UnaryExpressionModel<T>::evaluate() const {
+	if (operand == null) {
+		throw NullOperandException;
 	}
+	return evaluate(operand);
 };
 #endif // !UNARYEXPRESSIONMODEL_H
