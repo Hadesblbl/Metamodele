@@ -1,15 +1,17 @@
 #ifndef FUZZYFACTORY_H
 #define FUZZYFACTORY_H
 
-class FuzzyFactory : ExpressionFactory{
+
+template<class T>
+class FuzzyFactory : ExpressionFactory<T>{
     public:
-        Expression newAnd(Expression,Expression);
-        Expression newOr(Expression,Expression);
-        Expression newThen(Expression,Expression);
-        Expression newAgg(Expression,Expression);
-        Expression newDefuzz(Expression,Expression);
-        Expression newNot(Expression);
-        Expression newIs(Is,Expression);
+        Expression<T> newAnd(Expression<T>,Expression<T>);
+        Expression<T> newOr(Expression<T>,Expression<T>);
+        Expression<T> newThen(Expression<T>,Expression<T>);
+        Expression<T> newAgg(Expression<T>,Expression<T>);
+        Expression<T> newDefuzz(Expression<T>,Expression<T>);
+        Expression<T> newNot(Expression<T>);
+        Expression<T> newIs(Is,Expression<T>);
 
         void changeAnd(And);
         void changeOr(Or);
@@ -17,30 +19,42 @@ class FuzzyFactory : ExpressionFactory{
         void changeAgg(Agg);
 
     private:
-        BinaryShadowExpression and;
-        BinaryShadowExpression or;
-        BinaryShadowExpression then;
-        BinaryShadowExpression agg;
-        BinaryShadowExpression defuzz;
+        BinaryShadowExpression<T> and;
+        BinaryShadowExpression<T> or;
+        BinaryShadowExpression<T> then;
+        BinaryShadowExpression<T> agg;
+        BinaryShadowExpression<T> defuzz;
 
-        UnaryShadowExpression not;
+        UnaryShadowExpression<T> not;
 }
-public Expression FuzzyFactory::newAnd(Expression l,Expression r){
+
+template<class T>
+public Expression<T> FuzzyFactory::newAnd(Expression<T> l,Expression<T> r){
     return newBinary(and,l,r);
 }
-public Expression FuzzyFactory::newOr(Expression l,Expression r){
+
+template<class T>
+public Expression<T> FuzzyFactory::newOr(Expression<T> l,Expression<T> r){
     return newBinary(or,l,r);
 }
-public Expression FuzzyFactory::newThen(Expression l,Expression r){
+
+template<class T>
+public Expression<T> FuzzyFactory::newThen(Expression<T> l,Expression<T> r){
     return newBinary(then,l,r);
 }
-public Expression FuzzyFactory::newAgg(Expression l,Expression r){
+
+template<class T>
+public Expression<T> FuzzyFactory::newAgg(Expression<T> l,Expression<T> r){
     return newBinary(agg,l,r);
 }
-public Expression FuzzyFactory::newDefuzz(Expression l,Expression r){
+
+template<class T>
+public Expression<T> FuzzyFactory::newDefuzz(Expression<T> l,Expression<T> r){
     return newBinary(defuzz,l,r);
 }
-public Expression FuzzyFactory::newNot(Expression o){
+
+template<class T>
+public Expression<T> FuzzyFactory::newNot(Expression<T> o){
     return newUnary(not,o);
 }
 
