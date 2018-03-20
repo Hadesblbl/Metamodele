@@ -126,6 +126,7 @@
     <ClInclude Include="BinaryExpressionModel.h" />
     <ClInclude Include="And.h" />
     <ClInclude Include="MamdaniDefuzz.h" />
+    <ClInclude Include="NullOperatorException.h" />
     <ClInclude Include="Or.h" />
     <ClInclude Include="OrMax.h" />
     <ClInclude Include="OrPlus.h" />
