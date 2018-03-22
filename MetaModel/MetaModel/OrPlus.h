@@ -10,7 +10,7 @@ class OrPlus : public Or<T> {
 };
 
 template <class T>
-T OrPlus<T>::evaluate(Expression *l, Expression *r) {
+T OrPlus<T>::evaluate(Expression<T> *l, Expression<T> *r) {
 	T left = l->evaluate();
 	T right = r->evaluate();
 	return left + right;
