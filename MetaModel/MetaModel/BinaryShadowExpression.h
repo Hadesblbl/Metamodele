@@ -11,7 +11,7 @@ class BinaryShadowExpression : public BinaryExpression{
         BinaryExpression<T> target;
 }
 
-public T BinaryShadowExpression::evaluate(Expression<T>* l,Expression<T>* r){
+public T BinaryShadowExpression<T>::evaluate(Expression<T>* l,Expression<T>* r){
     if target==null throw NullOperatorException;
     target.evaluate(l,r);
 }
