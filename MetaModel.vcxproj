@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -129,6 +129,8 @@
     <ClInclude Include="NullOperatorException.h" />
     <ClInclude Include="Or.h" />
     <ClInclude Include="OrMax.h" />
+    <ClInclude Include="FuzzyFactory.h" />
+    <ClInclude Include="ExpressionFactory.h" />
     <ClInclude Include="OrPlus.h" />
     <ClInclude Include="Then.h" />
     <ClInclude Include="ThenMin.h" />
