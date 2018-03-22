@@ -12,8 +12,8 @@ class UnaryShadowExpression : public UnaryExpression{
 }
 
 public T UnaryShadowExpression<T>::evaluate(Expression<T>* o){
-    if target==null throw NullOperatorException;
-    target.evaluate(l,r);
+    if (target==null) throw NullOperatorException;
+    target.evaluate(o);
 }
 
 #endif
