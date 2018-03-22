@@ -12,7 +12,7 @@ class BinaryShadowExpression : public BinaryExpression{
 }
 
 public T BinaryShadowExpression<T>::evaluate(Expression<T>* l,Expression<T>* r){
-    if target==null throw NullOperatorException;
+    if (target==null) throw NullOperatorException;
     target.evaluate(l,r);
 }
 
