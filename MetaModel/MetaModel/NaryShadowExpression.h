@@ -7,6 +7,7 @@ class NaryShadowExpression : public NaryExpression{
     public:
         NaryShadowExpression();
         T evaluate(Expression<T>[] *);
+        void setTarget(NaryExpression<T>*);
     private:
         NaryExpression<T> target;
 }
