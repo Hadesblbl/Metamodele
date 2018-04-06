@@ -7,7 +7,6 @@ using namespace core;
 template <class T>
 class NaryExpressionModel : public NaryExpression<T>, public Expression<T> {
 public:
-	NaryExpressionModel(BinaryExpression<T>*, Expression<T>**);
 
 	virtual T evaluate() const;
 	virtual T evaluate(Expression<T>**) const;
