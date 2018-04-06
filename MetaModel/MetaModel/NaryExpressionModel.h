@@ -64,4 +64,3 @@ template <class T>
 void NaryExpressionModel::setOperands(Expression<T> **oper) {
 	operands = oper;
 };
-#endif /* NARYEXPRESSIONMODEL_H */

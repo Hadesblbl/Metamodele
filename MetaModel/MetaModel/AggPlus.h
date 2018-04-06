@@ -10,7 +10,6 @@ class AggPlus : public Agg<T> {
 };
 
 template <class T>
-T AggPlus<T>::evaluate(Expression *l, Expression *r) {
 	T left = l->evaluate();
 	T right = r->evaluate();
 	return left + right;

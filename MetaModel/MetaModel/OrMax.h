@@ -10,7 +10,6 @@ class OrMax : public Or<T> {
 };
 
 template <class T>
-T OrMax<T>::evaluate(Expression *l, Expression *r) {
 	T left = l->evaluate();
 	T right = r->evaluate();
 	return std::max(left,right);

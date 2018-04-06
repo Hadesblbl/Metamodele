@@ -10,7 +10,7 @@ class ThenMult : public Then<T> {
 };
 
 template <class T>
-T ThenMult<T>::evaluate(Expression *l, Expression *r) {
+T ThenMult<T>::evaluate(Expression<T> *l, Expression<T> *r) {
 	T left = l->evaluate();
 	T right = r->evaluate();
 	return left * right;
