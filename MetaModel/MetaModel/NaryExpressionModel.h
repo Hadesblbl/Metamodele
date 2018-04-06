@@ -13,7 +13,7 @@ public:
 	virtual T evaluate(Expression<T>**) const;
 
 	virtual NaryExpression<T>* getOperator();
-	virtual Expression<T>[]* getOperands();
+	virtual Expression<T>** getOperands();
 	virtual void setOpe(BinaryExpression<T>*);
 	virtual void setOperands(Expression<T>**);
 private:

@@ -84,6 +84,60 @@
     <ClInclude Include="NullOperatorException.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="FuzzyFactory.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="LeftExpressionException.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="NullOperandException.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="RightExpressionException.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpressionFactory.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="SugenoConclusion.h">
+      <Filter>Fichiers d%27en-tête\Fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="SugenoDefuzz.h">
+      <Filter>Fichiers d%27en-tête\Fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="SugenoThen.h">
+      <Filter>Fichiers d%27en-tête\Fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="UnaryShadowExpression.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="NaryShadowExpression.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="NaryExpressionModel.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="NaryExpressionException.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="NaryExpression.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryShadowExpression.h">
+      <Filter>Fichiers d%27en-tête\core</Filter>
+    </ClInclude>
+    <ClInclude Include="Not.h">
+      <Filter>Fichiers d%27en-tête\Fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="NotMinus1.h">
+      <Filter>Fichiers d%27en-tête\Fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="is.h">
+      <Filter>Fichiers d%27en-tête\Fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="isTriangle.h">
+      <Filter>Fichiers d%27en-tête\Fuzzy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
