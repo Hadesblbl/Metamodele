@@ -9,6 +9,7 @@ class AndMin : public And<T> {
 };
 
 template <class T>
+T AndMin<T>::evaluate(Expression<T> *l, Expression<T> *r) {
 	T left = l->evaluate();
 	T right = r->evaluate();
 	return std::min(left,right);
