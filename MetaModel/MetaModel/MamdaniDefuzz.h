@@ -7,6 +7,7 @@ namespace Fuzzy {
 	public:
 		virtual T evaluate() const;
 		shape buildshape(int min,int max,int step);
+		virtual defuzz(const shape*) = 0;
 	};
 
 	template <class T>

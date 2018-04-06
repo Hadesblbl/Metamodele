@@ -8,6 +8,7 @@ namespace Fuzzy {
 	};
 
 	template <class T>
+	T CogDefuzz<T>::defuzz(const shape*) {
 
 	}
 }

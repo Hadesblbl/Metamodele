@@ -7,13 +7,19 @@ using namespace core;
 template <class T>
 class NaryExpressionModel : public NaryExpression<T>, public Expression<T> {
 public:
+	NaryExpressionModel(NaryExpression<T>*, Expression<T>**);
 
 	virtual T evaluate() const;
 	virtual T evaluate(Expression<T>**) const;
 
 	virtual NaryExpression<T>* getOperator();
+<<<<<<< HEAD
 	virtual Expression<T>** getOperands();
 	virtual void setOpe(BinaryExpression<T>*);
+=======
+	virtual Expression<T>[]* getOperands();
+	virtual void setOpe(NaryExpression<T>*);
+>>>>>>> c953ef3e17441f7c209ea2873f18f74de5ae7fc8
 	virtual void setOperands(Expression<T>**);
 private:
 	NaryExpression<T> *ope;
