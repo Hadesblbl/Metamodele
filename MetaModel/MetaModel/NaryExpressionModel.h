@@ -5,7 +5,6 @@
 
 using namespace core;
 template <class T>
-<<<<<<< HEAD
 class NaryExpressionModel : public NaryExpression<T>, public Expression<T> {
 public:
 	NaryExpressionModel(BinaryExpression<T>*, Expression<T>**);
@@ -66,27 +65,3 @@ void NaryExpressionModel::setOperands(Expression<T> **oper) {
 	operands = oper;
 };
 #endif /* NARYEXPRESSIONMODEL_H */
-=======
-class NaryExpressionModel : public NaryExpression<T> , public Expression<T> {
-private:
-	NaryExpression<T> operator;
-	Expression<T>[] operand;
-};
-
-template <class T>
-T NaryExpressionModel<T>::evaluate(Expression<T>[] *o) const {
-	if (operator==null) {
-		throw NullOperatorException();
-	}
-	return operator->evaluate(o);
-};
-
-template <class T>
-T NaryExpressionModel<T>::evaluate() const {
-	if (operand == null) {
-		throw NullOperandException();
-	}
-	return evaluate(operand);
-};
-#endif
->>>>>>> 6680505190c9798b1ec08b3bcfaf05ab963a2e61
