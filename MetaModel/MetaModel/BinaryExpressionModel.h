@@ -7,12 +7,12 @@ using namespace core;
 template <class T>
 	class BinaryExpressionModel : public BinaryExpression<T>, public Expression<T> {
 	public:
-		BinaryExpressionModel
+		BinaryExpressionModel(BinaryExpression<T>*,Expression<T>*,Expression<T>*);
 
 		virtual T evaluate() const;
 		virtual T evaluate(Expression<T>*, Expression<T>*) const;
 
-		virtual BinaryExpression<T>* getOpe();
+		virtual BinaryExpression<T>* getOperator();
 		virtual Expression<T>* getLeft();
 		virtual Expression<T>* getRight();
 		virtual void setOpe(BinaryExpression<T>*);
@@ -32,6 +32,12 @@ template <class T>
 		return ope->evaluate(l,r);
 	};
 
+	template<class T>
+	BinaryExpressionModel<T>::BinaryExpressionModel(BinaryExpression<T>* ope, Expression<T>* l, Expression<T>* r)
+	{
+		this->ope = ope; this->l = l; this->r = r;
+	}
+
 	template <class T>
 	T BinaryExpressionModel<T>::evaluate() const {
 		if (l ==null) {
@@ -44,18 +50,18 @@ template <class T>
 	};
 
 	template <class T>
-	BinaryExpression<T>* BinaryExpressionModel::getOpe() {
-		return this.ope;
+	BinaryExpression<T>* BinaryExpressionModel::getOperator() {
+		return this->ope;
 	};
 
 	template <class T>
 	Expression<T>* BinaryExpressionModel::getLeft() {
-		return this.l;
+		return this->l;
 	};
 
 	template <class T>
 	Expression<T>* BinaryExpressionModel::getRight() {
-		return this.r;
+		return this->r;
 	};
 
 	template <class T>
@@ -66,5 +72,10 @@ template <class T>
 	template <class T>
 	void BinaryExpressionModel::setLeft(Expression<T>* left) {
 		l = left;
+	};
+
+	template <class T>
+	void BinaryExpressionModel::setRight(Expression<T>* right) {
+		r = right;
 	};
 #endif /* UNARYEXPRESSIONMODEL_H */
