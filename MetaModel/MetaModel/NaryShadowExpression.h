@@ -17,4 +17,8 @@ public T NaryShadowExpression<T>::evaluate(Expression<T>[]* o){
     target.evaluate(o);
 }
 
+public void NaryShadowExpression::setTarget(NaryExpression<T>* exp){
+    target=exp;
+}
+
 #endif

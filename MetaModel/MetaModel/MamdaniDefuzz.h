@@ -6,7 +6,7 @@ namespace Fuzzy {
 	class MamdaniDefuzz abstract {
 	public:
 		virtual T evaluate() const;
-		shape buildshape(int min,int max,int step);
+		shape* buildshape(int min,int max,int step);
 		virtual defuzz(const shape*) = 0;
 	};
 

@@ -16,6 +16,11 @@ class ExpressionFactory{
         Expression<T> * memory;
 };
 
+template<class T>
+public Expression<T> ExpressionFactory<T>::Hold(Expression<T> exp){
+    memory[strlen(memory)]=exp;//a corriger
+    return exp;
+}
 
 template<class T>
 public Expression<T> ExpressionFactory<T>::newUnary(UnaryExpression<T> ope,Expression<T> o){
