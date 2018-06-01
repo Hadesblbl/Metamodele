@@ -29,6 +29,7 @@ typename Evaluator<T>::Shape Evaluator<T>::BuildShape(const T& min, const T& max
     }
     return Shape(x, y);
 }
+
 template <class T>
 ostream& Evaluator<T>::PrintShape(ostream& os, const Shape& s)
 {
