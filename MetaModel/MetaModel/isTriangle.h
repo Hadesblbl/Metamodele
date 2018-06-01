@@ -1,9 +1,10 @@
 #ifndef isTriangle_h
 #define isTriangle_h
+
 #include "UnaryExpression.h";
 #include "is.h";
-
 using namespace core;
+
 template <class T>
 class isTriangle : public is<T> {
 private:

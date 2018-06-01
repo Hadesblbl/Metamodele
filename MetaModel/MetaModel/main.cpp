@@ -1,5 +1,16 @@
 #include <iostream>
 
+#include "FuzzyFactory.h"
+#include "ValueModel.h"
+#include "NotMinus1.h"
+#include "And.h"
+#include "AndMin.h"
+#include "OrMax.h"
+#include "ThenMin.h"
+#include "CogDefuzz.h"
+#include "IsTriangle.h"
+#include "AggMax.h"
+
 int main(){
     NotMinus1 opNot; 
     AndMin opAnd; 

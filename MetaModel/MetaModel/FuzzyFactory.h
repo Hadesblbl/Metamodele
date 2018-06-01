@@ -1,6 +1,7 @@
 #ifndef FUZZYFACTORY_H
 #define FUZZYFACTORY_H
 
+#include "ExpressionFactory.h"
 
 template<class T>
 class FuzzyFactory : ExpressionFactory<T>{
@@ -26,51 +27,55 @@ class FuzzyFactory : ExpressionFactory<T>{
         BinaryShadowExpression<T> defuzz;
 
         UnaryShadowExpression<T> not;
-}
+};
 
 template<class T>
-public Expression<T> FuzzyFactory::newAnd(Expression<T>* l,Expression<T>* r){
+Expression<T> FuzzyFactory<T>::newAnd(Expression<T>* l,Expression<T>* r){
     return newBinary(and,l,r);
 }
 
 template<class T>
-public Expression<T> FuzzyFactory::newOr(Expression<T>* l,Expression<T>* r){
+Expression<T> FuzzyFactory<T>::newOr(Expression<T>* l,Expression<T>* r){
     return newBinary(or,l,r);
 }
 
 template<class T>
-public Expression<T> FuzzyFactory::newThen(Expression<T>* l,Expression<T>* r){
+Expression<T> FuzzyFactory<T>::newThen(Expression<T>* l,Expression<T>* r){
     return newBinary(then,l,r);
 }
 
 template<class T>
-public Expression<T> FuzzyFactory::newAgg(Expression<T>* l,Expression<T>* r){
+Expression<T> FuzzyFactory<T>::newAgg(Expression<T>* l,Expression<T>* r){
     return newBinary(agg,l,r);
 }
 
 template<class T>
-public Expression<T> FuzzyFactory::newDefuzz(Expression<T>* l,Expression<T>* r){
+Expression<T> FuzzyFactory<t>::newDefuzz(Expression<T>* l,Expression<T>* r){
     return newBinary(defuzz,l,r);
 }
 
 template<class T>
-public Expression<T> FuzzyFactory::newNot(Expression<T>* o){
+Expression<T> FuzzyFactory<T>::newNot(Expression<T>* o){
     return newUnary(not,o);
 }
 
-public void FuzzyFactory::changeAnd(And o){
+template<class T>
+void FuzzyFactory<T>::changeAnd(And o){
     and.setTarget(o);
 }
 
-public void FuzzyFactory::changeOr(Or o){
+template<class T>
+void FuzzyFactory<T>::changeOr(Or o){
     or.setTarget(o);
 }
 
-public void FuzzyFactory::changeThen(Then o){
+template<class T>
+void FuzzyFactory<T>::changeThen(Then o){
     then.setTarget(o);
 }
 
-public void FuzzyFactory::changeAgg(Agg o){
+template<class T>
+void FuzzyFactory<T>::changeAgg(Agg o){
     agg.setTarget(o);
 }
 #endif
