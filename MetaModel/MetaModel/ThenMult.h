@@ -6,7 +6,10 @@
 using namespace core;
 template <class T>
 class ThenMult : public Then<T> {
-
+	public:
+		ThenMult();
+		~ThenMult();
+		T evaluate(Expression<T> *, Expression<T> *) const;
 };
 
 template <class T>

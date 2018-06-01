@@ -1,5 +1,5 @@
-#ifndef MamdaniDefuzz_H
-#define MamdaniDefuzz_H
+#ifndef MAMDANIDEFUZZ_H
+#define MAMDANIDEFUZZ_H
 
 namespace Fuzzy {
 	template <class T>
@@ -7,12 +7,12 @@ namespace Fuzzy {
 	public:
 		virtual T evaluate() const;
 		shape* buildshape(int min,int max,int step);
-		virtual defuzz(const shape*) = 0;
+		virtual T defuzz(const shape*) = 0;
 	};
 
 	template <class T>
 	T MamdaniDefuzz<T>::evaluate() const {
-		defuzz(buildshape(min,max,step));
+		return defuzz(buildshape(min,max,step));
 	}
 }
 #endif

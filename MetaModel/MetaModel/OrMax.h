@@ -1,12 +1,16 @@
-#ifndef OrMax_h
-#define OrMax_h
+#ifndef ORMAX_H
+#define ORMAX_H
+
 #include "BinaryExpression.h";
 #include "Or.h";
 
 using namespace core;
 template <class T>
 class OrMax : public Or<T> {
-
+	public:
+		OrMax();
+		~OrMax();
+		T evaluate(Expression<T> *, Expression<T> *) const;
 };
 
 template <class T>

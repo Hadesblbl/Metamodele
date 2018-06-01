@@ -7,18 +7,21 @@ using namespace core;
 
 template <class T>
 class isTriangle : public is<T> {
-private:
-	T min;
-	T max;
-	T mid;
-
 public:
+	isTriangle(T&,T&,T&);
+	~isTriangle();
+
 	T getMin();
 	T getMid();
 	T getMax();
 	setMin(T min);
 	setMid(T mid);
 	setMax(T max);
+
+private:
+	T min;
+	T max;
+	T mid;
 };
 
 template <class T>

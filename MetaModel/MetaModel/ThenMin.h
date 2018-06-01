@@ -1,11 +1,16 @@
-#ifndef ThenMin_h
-#define ThenMin_h
+#ifndef THENMIN_H
+#define THENMIN_H
+
 #include "BinaryExpression.h";
 #include "Then.h";
 
 using namespace core;
 template <class T>
 class ThenMin : public Then<T> {
+	public:
+		ThenMin();
+		~ThenMin();
+		T evaluate(Expression<T> *, Expression<T> *) const;
 
 };
 

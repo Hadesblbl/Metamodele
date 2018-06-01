@@ -6,6 +6,10 @@
 using namespace core;
 template <class T>
 class OrPlus : public Or<T> {
+	public:
+		OrPlus();
+		~OrPlus();
+		T evaluate(Expression<T> *, Expression<T> *) const;
 
 };
 

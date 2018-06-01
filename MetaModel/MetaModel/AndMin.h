@@ -1,5 +1,5 @@
-#ifndef AndMin_h
-#define AndMin_h
+#ifndef ANDMIN_H
+#define ANDMIN_H
 
 #include "BinaryExpression.h";
 #include "And.h";
