@@ -36,7 +36,7 @@ template <class T>
 	BinaryExpressionModel<T>::BinaryExpressionModel(BinaryExpression<T>* ope, Expression<T>* l, Expression<T>* r)
 	{
 		this->ope = ope; this->l = l; this->r = r;
-	}
+	};
 
 	template <class T>
 	T BinaryExpressionModel<T>::evaluate() const {

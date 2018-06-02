@@ -4,19 +4,22 @@
 #include "And.h";
 
 using namespace core;
-template <class T>
-class AndMult : public And<T> {
+
+namespace fuzzy
+{
+	template <class T>
+	class AndMult : public And<T> {
 	public:
-		AndMult();
-		~AndMult();
+		AndMult() {};
+		virtual ~AndMult() {};
 		T evaluate(Expression<T> *, Expression<T> *) const;
-};
+	};
 
-template <class T>
-T AndMult<T>::evaluate(Expression<T> *l, Expression<T> *r) const {
-	T left = l->evaluate();
-	T right = r->evaluate();
-	return left * right;
+	template <class T>
+	T AndMult<T>::evaluate(Expression<T> *l, Expression<T> *r) const {
+		T left = l->evaluate();
+		T right = r->evaluate();
+		return left * right;
+	}
 }
-
 #endif /* AndMult_h */

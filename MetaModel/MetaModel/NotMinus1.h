@@ -8,15 +8,15 @@ using namespace core;
 template <class T>
 class NotMinus1 : public Not<T> {
 	public:
-		NotMinus1();
-		~NotMinus1();
+		NotMinus1() {};
+		virtual ~NotMinus1() {};
 		T evaluate(Expression<T> *) const;
 };
 
 template <class T>
-T NotMinus1<T>::evaluate(Expression<T> *expr) {
+T NotMinus1<T>::evaluate(Expression<T> *expr) const{
 	T val = expr->evaluate();
-	return -val-1;
+	return 1-val;
 }
 
 #endif /* AggMax_h */

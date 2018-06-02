@@ -13,15 +13,15 @@ namespace fuzzy
 	class AggPlus : public Agg<T> {
 	public:
 		AggPlus() {};
-		virtual ~AggPlus();
+		virtual ~AggPlus() {};
 		T evaluate(Expression<T> *, Expression<T> *) const;
 	};
 
 	template <class T>
-		T AggPlus<T>::evaluate(Expression<T> *l, Expression<T> *r) const {
+	T AggPlus<T>::evaluate(Expression<T> *l, Expression<T> *r) const {
 		T left = l->evaluate();
 		T right = r->evaluate();
 		return left + right;
-	};
+	}
 }
 #endif /* AggPlus_h */
