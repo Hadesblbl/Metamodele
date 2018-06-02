@@ -7,7 +7,7 @@ template<class T>
 class FuzzyFactory : ExpressionFactory<T>{
     public:
         FuzzyFactory();
-        FuzzyFactory(Not*,And*,Or*,Then*,Or*,CogDefuzz*)
+        FuzzyFactory(Not<T>*,And<T>*,Or<T>*,Then<T>*,Or<T>*,CogDefuzz<T>*)
         ~FuzzyFactory();
 
         Expression<T> newAnd(Expression<T>*,Expression<T>*);

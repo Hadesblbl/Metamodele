@@ -5,10 +5,14 @@
 using namespace core;
 template <class T>
 class ValueModel : public Expression<T> {
+	public:
+		ValueModel();
+		ValueModel(T);
+		~ValueModel();
+
+		void setValue(T);
 	private:
 		T value;
-	public:
-		void setValue(T v);
 	};
 
 template <class T>

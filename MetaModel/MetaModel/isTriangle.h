@@ -6,10 +6,10 @@
 using namespace core;
 
 template <class T>
-class isTriangle : public is<T> {
+class IsTriangle : public is<T> {
 public:
-	isTriangle(T&,T&,T&);
-	~isTriangle();
+	IsTriangle(T,T,T);
+	~IsTriangle();
 
 	T getMin();
 	T getMid();
@@ -25,7 +25,7 @@ private:
 };
 
 template <class T>
-T isTriangle<T>::evaluate(Expression<T> *expr) {
+T IsTriangle<T>::evaluate(Expression<T> *expr) {
 	T val = evaluate(expr);
 	if (val >= min && val < mid) {
 		return;
@@ -39,32 +39,32 @@ T isTriangle<T>::evaluate(Expression<T> *expr) {
 }
 
 template <class T>
-T isTriangle<T>::getMax() {
+T IsTriangle<T>::getMax() {
 	return max;
 }
 
 template <class T>
-T isTriangle<T>::getMin() {
+T IsTriangle<T>::getMin() {
 	return min;
 }
 
 template <class T>
-T isTriangle<T>::getMid() {
+T IsTriangle<T>::getMid() {
 	return mid;
 }
 
 template <class T>
-void isTriangle<T>::setMax(T max) {
+void IsTriangle<T>::setMax(T max) {
 	this.max = max;
 }
 
 template <class T>
-void isTriangle<T>::setMid(T mid) {
+void IsTriangle<T>::setMid(T mid) {
 	this.mid = mid;
 }
 
 template <class T>
-void isTriangle<T>::setMin(T min) {
+void IsTriangle<T>::setMin(T min) {
 	this.min = min;
 }
 #endif /* AggMax_h */
