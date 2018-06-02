@@ -8,8 +8,8 @@ namespace fuzzy
 	template <class T>
 	class CogDefuzz : public MamdaniDefuzz<T>{
 		public:
-			CogDefuzz();
-			~CogDefuzz();
+			CogDefuzz() {};
+			virtual ~CogDefuzz() {};
 
 			T evaluate();
 	};

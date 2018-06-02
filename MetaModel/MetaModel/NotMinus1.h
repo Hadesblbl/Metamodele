@@ -5,18 +5,20 @@
 #include "Not.h";
 using namespace core;
 
-template <class T>
-class NotMinus1 : public Not<T> {
+namespace fuzzy
+{
+	template <class T>
+	class NotMinus1 : public Not<T> {
 	public:
 		NotMinus1() {};
 		virtual ~NotMinus1() {};
 		T evaluate(Expression<T> *) const;
-};
+	};
 
-template <class T>
-T NotMinus1<T>::evaluate(Expression<T> *expr) const{
-	T val = expr->evaluate();
-	return 1-val;
+	template <class T>
+	T NotMinus1<T>::evaluate(Expression<T> *expr) const {
+		T val = expr->evaluate();
+		return 1 - val;
+	}
 }
-
 #endif /* AggMax_h */

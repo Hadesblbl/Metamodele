@@ -11,6 +11,6 @@ namespace fuzzy
 	class Then : public BinaryExpression<T> {
 	public:
 		virtual ~Then() {}
-	}
+	};
 }
 #endif /* Then_h */

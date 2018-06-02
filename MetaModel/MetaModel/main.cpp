@@ -8,18 +8,22 @@
 #include "OrMax.h"
 #include "ThenMin.h"
 #include "CogDefuzz.h"
-#include "IsTriangle.h"
+#include "isTriangle.h"
 #include "AggMax.h"
+
+using namespace fuzzy;
+using namespace core;
 
 int main()
 {
     NotMinus1<int> opNot;
     AndMin<int> opAnd;
     OrMax<int> opOr;
+	AggMax<int> opAgg;
     ThenMin<int> opThen;
     CogDefuzz<int> opDefuzz;
     //fuzzy expession factory
-    FuzzyFactory<int> f(&opNot, &opAnd, &opOr, &opThen, &opOr, &opDefuzz);
+    FuzzyFactory<int> f(&opNot, &opAnd, &opOr, &opThen, &opAgg, &opDefuzz);
     //membership function
     IsTriangle<int> poor(-5, 0, 5);
     IsTriangle<int> good(0, 5, 10);
@@ -31,7 +35,7 @@ int main()
     ValueModel<int> service(0);
     ValueModel<int> food(0);
     ValueModel<int> tips(0);
-    Expression *r = f.newAgg(
+    Expression<int> *r = f.newAgg(
         f.newAgg(
             f.newThen(
                 f.newIs(&service, &poor),
@@ -43,7 +47,7 @@ int main()
             f.newIs(&service, &excellent),
             f.newIs(&tips, &generous)));
     //defuzzification
-    Expression* system = f.newDefuzz(&tips, r, 0, 25, 1);
+    Expression<int>* system = f.newDefuzz(&tips, r, 0, 25, 1);
     //apply input
     float s;
     while (true)
@@ -51,6 +55,6 @@ int main()
         std::cout << "service : ";
         std::cin >> s;
         service.setValue(s);
-        std::cout << "tips -> " << system->Evaluate() << std::endl;
+        std::cout << "tips -> " << system->evaluate() << std::endl;
     }
 }

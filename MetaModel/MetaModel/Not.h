@@ -11,6 +11,6 @@ namespace fuzzy
 	class Not : public UnaryExpressions<T> {
 	public:
 		virtual ~Not() {};
-	}
+	};
 }
 #endif /* Not_h */
