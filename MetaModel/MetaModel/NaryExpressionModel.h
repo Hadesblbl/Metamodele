@@ -1,70 +1,45 @@
 #ifndef NARYEXPRESSIONMODEL_H
 #define NARYEXPRESSIONMODEL_H
+
 #include "NaryExpression.h";
 #include "Expression.h";
+#include "NaryExpressionException.h"
+
+using namespace std;
 
 namespace core
 {
 	template <class T>
 	class NaryExpressionModel : public NaryExpression<T>, public Expression<T> {
 	public:
-		NaryExpressionModel(NaryExpression<T>*, Expression<T>**);
+		NaryExpressionModel(NaryExpression<T>* operator, vector<Expression<T>*>* operands) : _operator(operator), _operands(operands) {};
+		virtual ~NaryExceptionException() {};
 
 		virtual T evaluate() const;
-		virtual T evaluate(Expression<T>**) const;
+		virtual T evaluate(vector<Expression<T>*>*) const;
 
-		virtual NaryExpression<T>* getOperator();
-		virtual Expression<T>[] * getOperands();
-		virtual void setOpe(NaryExpression<T>*);
-		virtual void setOperands(Expression<T>**);
 	private:
-		NaryExpression<T> *ope;
-		Expression<T> **operands;
+		NaryExpression<T>* _operator;
+		vector<Expression<T>*>* _operands
 	};
-
-	template <class T>
-	T NaryExpressionModel<T>::evaluate(Expression<T> **operands) const {
-		if (ope == null) {
-			throw NullOperatorException();
-		}
-		return ope->evaluate(operands);
-	};
-
-	template<class T>
-	NaryExpressionModel<T>::NaryExpressionModel(NaryExpression<T>* ope, Expression<T> **operands)
-	{
-		this->ope = ope; this->operands = operands;
-	}
 
 	template <class T>
 	T NaryExpressionModel<T>::evaluate() const {
-		for (int i = 0; i < operands.strlen(); i++) {
-			if (operands[i] == null) {
-				throw NaryExpressionException();
-			}
+		if (_operandes->empty())
+		{
+			throw new NaryExpressionException();
 		}
-		return evaluate(operands);
+		return evaluate(_operands);
 	};
 
 	template <class T>
-	NaryExpression<T>* NaryExpressionModel::getOperator() {
-		return ope;
+	T NaryExpressionModel<T>::evaluate(vector<Expression<T>*>* operands) const {
+		if (_operator == null) {
+			throw NullOperatorException();
+		}
+		return _operator->evaluate(operands);
 	};
 
-	template <class T>
-	Expression<T>** NaryExpressionModel::getOperands() {
-		return operands;
-	};
-
-	template <class T>
-	void NaryExpressionModel::setOpe(BinaryExpression<T>* be) {
-		ope = be;
-	};
-
-	template <class T>
-	void NaryExpressionModel::setOperands(Expression<T> **oper) {
-		operands = oper;
-	};
 } 
 
 #endif /* NARYEXPRESSIONMODEL_H */

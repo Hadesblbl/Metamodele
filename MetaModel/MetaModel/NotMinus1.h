@@ -19,6 +19,6 @@ namespace fuzzy
 	T NotMinus1<T>::evaluate(Expression<T> *expr) const {
 		T val = expr->evaluate();
 		return 1 - val;
-	}
+	};
 }
 #endif /* AggMax_h */

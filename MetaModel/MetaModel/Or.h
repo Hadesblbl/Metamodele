@@ -12,6 +12,6 @@ namespace fuzzy
 
 	public:
 		virtual ~Or() {};
-	}
+	};
 }
 #endif /* Or_h */

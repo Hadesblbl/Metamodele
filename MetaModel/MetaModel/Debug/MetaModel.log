@@ -1,127 +1,153 @@
 ﻿  Main.cpp
 d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\unaryexpression.h(3): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpression.h(3): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpression.h(4): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
 d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryexpression.h(3): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(13): error C2143: erreur de syntaxe : absence de ';' avant '<'
-  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(20): note: voir la référence à l'instanciation de classe modèle 'ExpressionFactory<T>' en cours de compilation
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(13): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(13): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(14): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(14): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(14): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(15): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(15): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(15): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(16): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(16): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(16): error C2238: jetons inattendus avant ';'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(17): error C2143: erreur de syntaxe : absence de ';' avant '<'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(24): note: voir la référence à l'instanciation de classe modèle 'ExpressionFactory<T>' en cours de compilation
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(17): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(17): error C2238: jetons inattendus avant ';'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(18): error C2143: erreur de syntaxe : absence de ';' avant '<'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(18): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(18): error C2238: jetons inattendus avant ';'
 d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(19): error C2143: erreur de syntaxe : absence de ';' avant '<'
 d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(19): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
 d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(19): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(23): error C2988: impossible de reconnaître la définition/déclaration de modèle
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(23): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(23): error C2059: erreur de syntaxe : '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(23): error C2065: 'T' : identificateur non déclaré
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(23): error C2923: 'ExpressionFactory' : 'T' n'est pas un argument de type modèle valide pour le paramètre 'T'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(23): error C2143: erreur de syntaxe : absence de ';' avant '{'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(23): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(29): error C2988: impossible de reconnaître la définition/déclaration de modèle
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(29): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(29): error C2059: erreur de syntaxe : '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(29): error C2065: 'T' : identificateur non déclaré
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(29): error C2923: 'ExpressionFactory' : 'T' n'est pas un argument de type modèle valide pour le paramètre 'T'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(29): error C2143: erreur de syntaxe : absence de ';' avant '{'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(29): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(34): error C2988: impossible de reconnaître la définition/déclaration de modèle
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(34): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(34): error C2059: erreur de syntaxe : '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(34): error C2065: 'T' : identificateur non déclaré
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(34): error C2923: 'ExpressionFactory' : 'T' n'est pas un argument de type modèle valide pour le paramètre 'T'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(34): error C2143: erreur de syntaxe : absence de ';' avant '{'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(34): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(10): error C2061: erreur de syntaxe : identificateur 'Not'
-  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(34): note: voir la référence à l'instanciation de classe modèle 'FuzzyFactory<T>' en cours de compilation
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(11): error C2143: erreur de syntaxe : absence de ';' avant '~'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(10): error C2535: 'FuzzyFactory<T>::FuzzyFactory(void)' : fonction membre déjà définie ou déclarée
-  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(9): note: voir la déclaration de 'FuzzyFactory<T>::FuzzyFactory'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(13): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(13): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(13): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(14): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(14): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(14): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(15): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(15): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(15): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(16): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(16): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(16): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(17): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(17): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(17): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(18): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(18): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(18): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(19): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(19): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(19): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(21): error C2061: erreur de syntaxe : identificateur 'And'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(22): error C2061: erreur de syntaxe : identificateur 'Or'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(23): error C2061: erreur de syntaxe : identificateur 'Then'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(24): error C2061: erreur de syntaxe : identificateur 'Agg'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(27): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(27): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(27): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(28): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(28): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(28): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(29): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(29): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(29): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(30): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(30): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(30): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(31): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(31): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(31): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(33): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(33): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(33): error C2238: jetons inattendus avant ';'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(37): error C2988: impossible de reconnaître la définition/déclaration de modèle
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(37): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(37): error C2059: erreur de syntaxe : '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(37): error C2065: 'T' : identificateur non déclaré
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(37): error C2923: 'FuzzyFactory' : 'T' n'est pas un argument de type modèle valide pour le paramètre 'T'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(37): error C2143: erreur de syntaxe : absence de ';' avant '{'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(37): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(42): error C2988: impossible de reconnaître la définition/déclaration de modèle
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(42): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(42): error C2059: erreur de syntaxe : '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(42): error C2065: 'T' : identificateur non déclaré
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(42): error C2923: 'FuzzyFactory' : 'T' n'est pas un argument de type modèle valide pour le paramètre 'T'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(42): error C2143: erreur de syntaxe : absence de ';' avant '{'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(42): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(47): error C2988: impossible de reconnaître la définition/déclaration de modèle
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(47): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(47): error C2059: erreur de syntaxe : '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(47): error C2065: 'T' : identificateur non déclaré
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(47): error C2923: 'FuzzyFactory' : 'T' n'est pas un argument de type modèle valide pour le paramètre 'T'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(47): error C2143: erreur de syntaxe : absence de ';' avant '{'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(47): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(52): error C2988: impossible de reconnaître la définition/déclaration de modèle
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(52): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(52): error C2059: erreur de syntaxe : '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(52): error C2065: 'T' : identificateur non déclaré
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(52): error C2923: 'FuzzyFactory' : 'T' n'est pas un argument de type modèle valide pour le paramètre 'T'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(52): error C2143: erreur de syntaxe : absence de ';' avant '{'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(52): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(57): error C2988: impossible de reconnaître la définition/déclaration de modèle
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(57): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(57): error C2059: erreur de syntaxe : '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(57): error C2065: 't' : identificateur non déclaré
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(57): error C2923: 'FuzzyFactory' : 't' n'est pas un argument de type modèle valide pour le paramètre 'T'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(57): error C2143: erreur de syntaxe : absence de ';' avant '{'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(57): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(62): error C2988: impossible de reconnaître la définition/déclaration de modèle
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(62): error C2143: erreur de syntaxe : absence de ';' avant '<'
-d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(62): fatal error C1003: le nombre d'erreurs est supérieur à 100 ; arrêt de la compilation
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(23): error C2065: 'Expression' : identificateur non déclaré
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(23): error C2974: 'std::vector' : argument modèle non valide pour '_Ty', type attendu
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.12.25827\include\vector(658): note: voir la déclaration de 'std::vector'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(23): error C3203: 'allocator' : la classe modèle non spécialisée ne peut pas être utilisée comme argument modèle pour le paramètre modèle '_Alloc' ; type réel attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(23): error C2059: erreur de syntaxe : '>'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(23): error C2238: jetons inattendus avant ';'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(36): error C2988: impossible de reconnaître la définition/déclaration de modèle
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(36): error C2143: erreur de syntaxe : absence de ';' avant '<'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(36): error C2059: erreur de syntaxe : '<'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(36): error C2065: 'T' : identificateur non déclaré
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(36): error C2923: 'ExpressionFactory' : 'T' n'est pas un argument de type modèle valide pour le paramètre 'T'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(36): error C2143: erreur de syntaxe : absence de ';' avant '{'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(36): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(42): error C2988: impossible de reconnaître la définition/déclaration de modèle
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(42): error C2143: erreur de syntaxe : absence de ';' avant '<'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(42): error C2059: erreur de syntaxe : '<'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(42): error C2065: 'T' : identificateur non déclaré
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(42): error C2923: 'ExpressionFactory' : 'T' n'est pas un argument de type modèle valide pour le paramètre 'T'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(42): error C2143: erreur de syntaxe : absence de ';' avant '{'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(42): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(47): error C2988: impossible de reconnaître la définition/déclaration de modèle
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(47): error C2143: erreur de syntaxe : absence de ';' avant '<'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(47): error C2059: erreur de syntaxe : '<'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(47): error C2065: 'T' : identificateur non déclaré
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(47): error C2923: 'ExpressionFactory' : 'T' n'est pas un argument de type modèle valide pour le paramètre 'T'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(47): error C2143: erreur de syntaxe : absence de ';' avant '{'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\expressionfactory.h(47): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\agg.h(4): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\agg.h(11): error C2143: erreur de syntaxe : absence de ',' avant '<'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\agg.h(15): note: voir la référence à l'instanciation de classe modèle 'fuzzy::Agg<T>' en cours de compilation
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\not.h(4): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\not.h(11): error C2143: erreur de syntaxe : absence de ',' avant '<'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\not.h(14): note: voir la référence à l'instanciation de classe modèle 'fuzzy::Not<T>' en cours de compilation
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\and.h(4): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\is.h(4): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\is.h(12): error C2523: 'fuzzy::is<T>::~Is' : balise destructeur non correcte
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\is.h(13): note: voir la référence à l'instanciation de classe modèle 'fuzzy::is<T>' en cours de compilation
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\then.h(4): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\or.h(4): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\nulloperatorexception.h(1): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\nulloperatorexception.h(9): error C2059: erreur de syntaxe : '}'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\nulloperatorexception.h(9): error C2143: erreur de syntaxe : absence de ';' avant '}'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\unaryshadowexpression.h(11): error C2955: 'core::UnaryExpression' : l'utilisation de classe modèle requiert une liste d'arguments modèle
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\unaryexpression.h(7): note: voir la déclaration de 'core::UnaryExpression'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\unaryshadowexpression.h(18): note: voir la référence à l'instanciation de classe modèle 'core::UnaryShadowExpression<T>' en cours de compilation
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\nulloperatorexception.h(1): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\nulloperatorexception.h(4): error C2011: 'NullOperatorException' : redéfinition du type 'class'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\nulloperatorexception.h(4): note: voir la déclaration de 'NullOperatorException'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(4): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(5): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\nulloperandexception.h(1): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\nulloperatorexception.h(1): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\leftexpressionexception.h(1): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\rightexpressionexception.h(1): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(36): error C2244: 'core::BinaryExpressionModel<T>::evaluate' : impossible de faire correspondre la définition de fonction avec une déclaration existante
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(36): note: voir la déclaration de 'core::BinaryExpressionModel<T>::evaluate'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(36): note: définition
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(36): note: 'T core::BinaryExpressionModel<T>::evaluate(core::Expression *,core::Expression *) const'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(36): note: déclarations existantes
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(36): note: 'T core::BinaryExpressionModel<T>::evaluate(core::Expression<T> *,core::Expression<T> *) const'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(36): note: 'T core::BinaryExpressionModel<T>::evaluate(void) const'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(55): error C2244: 'core::BinaryExpressionModel::getOperator' : impossible de faire correspondre la définition de fonction avec une déclaration existante
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(55): note: voir la déclaration de 'core::BinaryExpressionModel::getOperator'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(55): note: définition
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(55): note: 'core::BinaryExpression<T> *core::BinaryExpressionModel::getOperator(void) const'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(55): note: déclarations existantes
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(55): note: 'core::BinaryExpression<T> *core::BinaryExpressionModel<T>::getOperator(void) const'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(60): error C2244: 'core::BinaryExpressionModel::getLeft' : impossible de faire correspondre la définition de fonction avec une déclaration existante
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(60): note: voir la déclaration de 'core::BinaryExpressionModel::getLeft'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(60): note: définition
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(60): note: 'core::Expression<T> *core::BinaryExpressionModel::getLeft(void) const'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(60): note: déclarations existantes
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(60): note: 'core::Expression<T> *core::BinaryExpressionModel<T>::getLeft(void) const'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(65): error C2244: 'core::BinaryExpressionModel::getRight' : impossible de faire correspondre la définition de fonction avec une déclaration existante
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(65): note: voir la déclaration de 'core::BinaryExpressionModel::getRight'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(65): note: définition
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(65): note: 'core::Expression<T> *core::BinaryExpressionModel::getRight(void) const'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(65): note: déclarations existantes
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(65): note: 'core::Expression<T> *core::BinaryExpressionModel<T>::getRight(void) const'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(70): error C2244: 'core::BinaryExpressionModel::setOpe' : impossible de faire correspondre la définition de fonction avec une déclaration existante
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(70): note: voir la déclaration de 'core::BinaryExpressionModel::setOpe'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(70): note: définition
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(70): note: 'void core::BinaryExpressionModel::setOpe(core::BinaryExpression<T> *)'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(70): note: déclarations existantes
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(70): note: 'void core::BinaryExpressionModel<T>::setOpe(core::BinaryExpression<T> *)'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(75): error C2244: 'core::BinaryExpressionModel::setLeft' : impossible de faire correspondre la définition de fonction avec une déclaration existante
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(75): note: voir la déclaration de 'core::BinaryExpressionModel::setLeft'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(75): note: définition
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(75): note: 'void core::BinaryExpressionModel::setLeft(core::Expression<T> *)'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(75): note: déclarations existantes
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(75): note: 'void core::BinaryExpressionModel<T>::setLeft(core::Expression<T> *)'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(80): error C2244: 'core::BinaryExpressionModel::setRight' : impossible de faire correspondre la définition de fonction avec une déclaration existante
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(80): note: voir la déclaration de 'core::BinaryExpressionModel::setRight'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(80): note: définition
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(80): note: 'void core::BinaryExpressionModel::setRight(core::Expression<T> *)'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(80): note: déclarations existantes
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpressionmodel.h(80): note: 'void core::BinaryExpressionModel<T>::setRight(core::Expression<T> *)'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryshadowexpression.h(12): error C2955: 'core::BinaryExpression' : l'utilisation de classe modèle requiert une liste d'arguments modèle
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryexpression.h(8): note: voir la déclaration de 'core::BinaryExpression'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryshadowexpression.h(19): note: voir la référence à l'instanciation de classe modèle 'core::BinaryShadowExpression<T>' en cours de compilation
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\binaryshadowexpression.h(18): error C3622: 'core::BinaryExpression<T>' : une classe déclarée comme 'abstract' ne peut pas être instanciée
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(7): error C2955: 'core::NaryExpression' : l'utilisation de classe modèle requiert une liste d'arguments modèle
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryexpression.h(7): note: voir la déclaration de 'core::NaryExpression'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(14): note: voir la référence à l'instanciation de classe modèle 'core::NaryShadowExpression<T>' en cours de compilation
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(10): error C2092: le type d'élément de tableau 'abstract declarator' ne peut pas être une fonction ou un type classe abstraite
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(10): error C3622: 'core::Expression<T>' : une classe déclarée comme 'abstract' ne peut pas être instanciée
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(10): error C2143: erreur de syntaxe : absence de ')' avant '*'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(10): error C2143: erreur de syntaxe : absence de ';' avant '*'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(10): error C2059: erreur de syntaxe : '*'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(10): error C2059: erreur de syntaxe : ')'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(10): error C2238: jetons inattendus avant ';'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(13): error C3622: 'core::NaryExpression<T>' : une classe déclarée comme 'abstract' ne peut pas être instanciée
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(17): error C2092: le type d'élément de tableau 'abstract declarator' ne peut pas être une fonction ou un type classe abstraite
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(17): error C3622: 'core::Expression<T>' : une classe déclarée comme 'abstract' ne peut pas être instanciée
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(17): error C2988: impossible de reconnaître la définition/déclaration de modèle
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(17): error C2143: erreur de syntaxe : absence de ')' avant '*'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(17): error C2143: erreur de syntaxe : absence de ';' avant '*'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(17): error C2059: erreur de syntaxe : ')'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(17): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(23): error C2244: 'core::NaryShadowExpression::setTarget' : impossible de faire correspondre la définition de fonction avec une déclaration existante
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(23): note: voir la déclaration de 'core::NaryShadowExpression::setTarget'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(23): note: définition
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(23): note: 'void core::NaryShadowExpression::setTarget(core::NaryExpression<T> *)'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(23): note: déclarations existantes
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\naryshadowexpression.h(23): note: 'void core::NaryShadowExpression<T>::setTarget(core::NaryExpression<T> *)'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(26): error C2061: erreur de syntaxe : identificateur 'CogDefuzz'
+  d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(50): note: voir la référence à l'instanciation de classe modèle 'fuzzy::FuzzyFactory<T>' en cours de compilation
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(26): error C2611: '(' : non conforme après '!' (identificateur attendu)
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(26): error C2059: erreur de syntaxe : ')'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(26): error C2059: erreur de syntaxe : ','
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(26): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(35): error C2061: erreur de syntaxe : identificateur 'Is'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(44): error C2059: erreur de syntaxe : ';'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(44): error C2238: jetons inattendus avant ';'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(45): error C2059: erreur de syntaxe : '||'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(45): error C2238: jetons inattendus avant ';'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(49): error C2059: erreur de syntaxe : ';'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(49): error C2238: jetons inattendus avant ';'
+d:\documents\ensisa\2a_ir\s2\framework\bis\metamodele\metamodel\metamodel\fuzzyfactory.h(26): fatal error C1903: impossible de récupérer à partir des erreurs précédentes ; arrêt de la compilation

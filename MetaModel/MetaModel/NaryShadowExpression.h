@@ -6,22 +6,22 @@ namespace core
 	template <class T>
 	class NaryShadowExpression : public NaryExpression {
 	public:
-		NaryShadowExpression();
-		T evaluate(Expression<T>[] * );
+		NaryShadowExpression(NaryExpression<T>* target) : _target(target) {};
+		T evaluate(vector<Expression<T>*>*) const;
 		void setTarget(NaryExpression<T>*);
 	private:
-		NaryExpression<T> target;
+		NaryExpression<T>* _target;
 	};
 
 	template <class T>
-		T NaryShadowExpression<T>::evaluate(Expression<T>[] * o) {
-		if (target == null) throw NullOperatorException;
-		target.evaluate(o);
+		T NaryShadowExpression<T>::evaluate(vector<Expression<T>*>* operands) const{
+		if (_target == null) throw NullOperatorException();
+		_target->evaluate(operands);
 	};
 
 	template <class T>
 		void NaryShadowExpression::setTarget(NaryExpression<T>* exp) {
-		target = exp;
+		_target = exp;
 	};
 
 }

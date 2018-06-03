@@ -11,11 +11,13 @@ namespace fuzzy
 			CogDefuzz() {};
 			virtual ~CogDefuzz() {};
 
-			T evaluate();
+	protected:
+		virtual T defuzz(const shape&);
 	};
-	/*
+
+
 	template <class T>
 	T CogDefuzz<T>::defuzz(const Shape * shape){
-	}*/
+	}
 }
 #endif

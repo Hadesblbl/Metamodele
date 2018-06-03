@@ -35,7 +35,7 @@ int main()
     ValueModel<int> service(0);
     ValueModel<int> food(0);
     ValueModel<int> tips(0);
-    Expression<int> *r = f.newAgg(
+    Expression<int>* r = f.newAgg(
         f.newAgg(
             f.newThen(
                 f.newIs(&service, &poor),
