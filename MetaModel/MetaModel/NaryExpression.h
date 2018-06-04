@@ -1,8 +1,8 @@
 #ifndef NARYEXPRESSION_H
 #define NARYEXPRESSION_H
 
-#include "Expression.h";
-#include <vector>;
+#include "Expression.h"
+#include <vector>
 
 using namespace std;
 

@@ -1,7 +1,7 @@
 #ifndef VALUE_H
 #define VALUE_H
 
-#include "Expression.h";
+#include "Expression.h"
 
 namespace core
 {

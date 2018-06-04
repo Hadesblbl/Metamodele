@@ -1,23 +1,56 @@
 #ifndef COGDEFUZZ_H
 #define COGDEFUZZ_H
 
-#include "MamdaniDefuzz.h";
+#include "MamdaniDefuzz.h"
+#include "ValueModel.h"
+#include <stdio.h>
+using namespace core;
 
 namespace fuzzy
 {
 	template <class T>
-	class CogDefuzz : public MamdaniDefuzz<T>{
-		public:
-			CogDefuzz() {};
-			virtual ~CogDefuzz() {};
+	class CogDefuzz : public MamdaniDefuzz<T> {
+	public:
+		CogDefuzz(){};
+		virtual ~CogDefuzz() {};
+		
+		T evaluate(Expression<T>*, Expression<T>*) const;
+		void setMin(T&);
+		void setMax(T&);
+		void setStep(T&);
 
-	protected:
-		virtual T defuzz(const shape&);
+	private:
+		T _min;
+		T _max;
+		T _step;
 	};
 
-
 	template <class T>
-	T CogDefuzz<T>::defuzz(const Shape * shape){
+	T CogDefuzz<T>::evaluate(Expression<T>* l, Expression<T>* r) const {
+		T area = 0;
+		T weightedArea = 0;
+		for (int i = min; i < max; i += step) {
+			(ValueModel<T> l).setValue(i);
+			T value = r.evaluate();
+			area += value;
+			weightedArea += value * i;
+		}
+		return weightedArea / area;
+	}
+
+	template<class T>
+	void CogDefuzz<T>::setMin(T& min) {
+		_min = min;
+	}
+
+	template<class T>
+	void CogDefuzz<T>::setMax(T& max) {
+		_max = max;
+	}
+
+	template<class T>
+	void CogDefuzz<T>::setStep(T& step) {
+		_step = step;
 	}
 }
 #endif

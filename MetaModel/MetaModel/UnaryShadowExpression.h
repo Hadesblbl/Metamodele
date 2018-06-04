@@ -8,7 +8,7 @@
 namespace core
 {
 	template <class T>
-	class UnaryShadowExpression : public UnaryExpression {
+	class UnaryShadowExpression : public UnaryExpression<T> {
 	public:
 		UnaryShadowExpression() {};
 		virtual ~UnaryShadowExpression() {};

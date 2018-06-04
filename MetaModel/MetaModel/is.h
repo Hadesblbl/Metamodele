@@ -1,15 +1,13 @@
 #ifndef is_h
 #define is_h
 
-#include "UnaryExpression.h";
+#include "UnaryExpression.h"
 using namespace core;
 
 namespace fuzzy
 {
 	template <class T>
-	class is : public UnaryExpression<T> {
-	public:
-		virtual ~Is() {};
+	class Is : public UnaryExpression<T> {
 	};
 }
 #endif /* is_h */

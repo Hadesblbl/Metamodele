@@ -1,7 +1,7 @@
 #ifndef Then_h
 #define Then_h
 
-#include "BinaryExpression.h";
+#include "BinaryExpression.h"
 
 using namespace core;
 

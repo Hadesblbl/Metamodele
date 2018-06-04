@@ -1,6 +1,7 @@
 #ifndef UNARYEXPRESSION_H
 #define UNARYEXPRESSION_H
-#include "Expression.h";
+
+#include "Expression.h"
 
 namespace core {
 	template <class T>
@@ -9,4 +10,5 @@ namespace core {
 		virtual T evaluate(Expression<T> *o) const = 0;
 	};
 }
+
 #endif

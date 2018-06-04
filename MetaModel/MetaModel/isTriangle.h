@@ -8,7 +8,7 @@ using namespace core;
 namespace fuzzy
 {
 	template <class T>
-	class IsTriangle : public is<T> {
+	class IsTriangle : public Is<T> {
 	public:
 		IsTriangle(T _min, T _mid, T _max) : min(_min), mid(_mid), max(_max) {};
 		virtual ~IsTriangle() {};

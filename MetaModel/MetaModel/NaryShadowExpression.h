@@ -4,7 +4,7 @@
 namespace core
 {
 	template <class T>
-	class NaryShadowExpression : public NaryExpression {
+	class NaryShadowExpression : public NaryExpression<T> {
 	public:
 		NaryShadowExpression(NaryExpression<T>* target) : _target(target) {};
 		T evaluate(vector<Expression<T>*>*) const;
@@ -20,7 +20,7 @@ namespace core
 	};
 
 	template <class T>
-		void NaryShadowExpression::setTarget(NaryExpression<T>* exp) {
+		void NaryShadowExpression<T>::setTarget(NaryExpression<T>* exp) {
 		_target = exp;
 	};
 

@@ -124,6 +124,7 @@
       <DeploymentContent>true</DeploymentContent>
     </ClInclude>
     <ClInclude Include="CogDefuzz.h" />
+    <ClInclude Include="Evaluator.h" />
     <ClInclude Include="Expression.h" />
     <ClInclude Include="BinaryExpression.h" />
     <ClInclude Include="BinaryExpressionModel.h" />

@@ -138,6 +138,9 @@
     <ClInclude Include="FuzzyFactory.h">
       <Filter>Fichiers d%27en-tête\Fuzzy</Filter>
     </ClInclude>
+    <ClInclude Include="Evaluator.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
