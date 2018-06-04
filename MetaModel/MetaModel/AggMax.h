@@ -1,8 +1,8 @@
 #ifndef AggMax_h
 #define AggMax_h
 
-#include "BinaryExpression.h";
-#include "Agg.h";
+#include "BinaryExpression.h"
+#include "Agg.h"
 
 using namespace core;
 

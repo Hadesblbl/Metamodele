@@ -1,7 +1,7 @@
 #ifndef OrPlus_h
 #define OrPlus_h
-#include "BinaryExpression.h";
-#include "Or.h";
+#include "BinaryExpression.h"
+#include "Or.h"
 
 using namespace core;
 

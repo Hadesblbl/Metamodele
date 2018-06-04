@@ -8,11 +8,12 @@
 #include <vector>
 
 using namespace std;
+
 namespace core {
 	template<class T>
 	class ExpressionFactory {
 	public:
-		ExpressionFactory() {};
+		//ExpressionFactory() {};
 		~ExpressionFactory();
 		Expression<T>* Hold(Expression<T>*);
 		Expression<T>* newUnary(UnaryExpression<T>*, Expression<T>*);

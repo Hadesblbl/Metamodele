@@ -9,7 +9,6 @@ namespace fuzzy
 {
 	template <class T>
 	class Or : public BinaryExpression<T> {
-
 	public:
 		virtual ~Or() {};
 	};

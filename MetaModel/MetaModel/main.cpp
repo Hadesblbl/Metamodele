@@ -23,7 +23,7 @@ int main()
     ThenMin<int> opThen;
     CogDefuzz<int> opDefuzz;
     //fuzzy expession factory
-    FuzzyFactory<int> f(&opNot, &opAnd, &opOr, &opThen, &opAgg, &opDefuzz);
+	FuzzyFactory<int> f(&opNot, &opAnd, &opOr, &opThen, &opAgg, &opDefuzz);
     //membership function
     IsTriangle<int> poor(-5, 0, 5);
     IsTriangle<int> good(0, 5, 10);
@@ -49,7 +49,7 @@ int main()
     //defuzzification
     Expression<int>* system = f.newDefuzz(&tips, r, 0, 25, 1);
     //apply input
-    float s;
+    int s;
     while (true)
     {
         std::cout << "service : ";

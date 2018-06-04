@@ -29,7 +29,7 @@ namespace fuzzy
 	T CogDefuzz<T>::evaluate(Expression<T>* l, Expression<T>* r) const {
 		T area = 0;
 		T weightedArea = 0;
-		for (int i = min; i < max; i += step) {
+		for (int i = _min; i < _max; i += _step) {
 			(ValueModel<T> l).setValue(i);
 			T value = r.evaluate();
 			area += value;

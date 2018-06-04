@@ -1,8 +1,9 @@
 #ifndef ORMAX_H
 #define ORMAX_H
 
-#include "BinaryExpression.h";
-#include "Or.h";
+#include "BinaryExpression.h"
+#include "Or.h"
+#include <algorithm>
 
 using namespace core;
 

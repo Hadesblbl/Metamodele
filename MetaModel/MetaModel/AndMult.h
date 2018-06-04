@@ -1,7 +1,7 @@
 #ifndef AndMult_h
 #define AndMult_h
-#include "BinaryExpression.h";
-#include "And.h";
+#include "BinaryExpression.h"
+#include "And.h"
 
 using namespace core;
 

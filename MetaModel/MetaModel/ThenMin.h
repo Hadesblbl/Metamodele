@@ -1,8 +1,8 @@
 #ifndef THENMIN_H
 #define THENMIN_H
 
-#include "BinaryExpression.h";
-#include "Then.h";
+#include "BinaryExpression.h"
+#include "Then.h"
 
 using namespace core;
 

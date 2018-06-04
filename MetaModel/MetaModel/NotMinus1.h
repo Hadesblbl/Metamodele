@@ -1,8 +1,8 @@
 #ifndef NotMinus1_h
 #define NotMinus1_h
 
-#include "UnaryExpression.h";
-#include "Not.h";
+#include "UnaryExpression.h"
+#include "Not.h"
 using namespace core;
 
 namespace fuzzy

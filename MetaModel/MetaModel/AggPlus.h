@@ -1,8 +1,8 @@
 #ifndef AggPlus_h
 #define AggPlus_h
 
-#include "BinaryExpression.h";
-#include "Agg.h";
+#include "BinaryExpression.h"
+#include "Agg.h"
 #include "Expression.h"
 
 using namespace core;

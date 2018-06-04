@@ -25,7 +25,16 @@ namespace fuzzy
 	template<class T>
 	class FuzzyFactory : public ExpressionFactory<T> {
 	public:
-		FuzzyFactory(Not<T>* not , And<T>* and, Or<T>* or , Then<T>* then, Agg<T>* agg, CogDefuzz<T>* defuzz) : _not(not), _and(and), _or(or ), _then(then), _agg(agg), _defuzz(defuzz) {};
+		FuzzyFactory(Not<T>* _not, And<T>* _and, Or<T>* _or, Then<T>* _then, Agg<T>* _agg, CogDefuzz<T>* _defuzz) : 
+			_not(new UnaryShadowExpression<T>(_not)),
+			_and(new BinaryShadowExpression<T>(_and)),
+			_or(new BinaryShadowExpression<T>(_or)),
+			_then(new BinaryShadowExpression<T>(_then)),
+			_agg(new BinaryShadowExpression<T>(_agg)),
+			_defuzz(new BinaryShadowExpression<T>(_defuzz))
+		{};
+		// WTF?
+
 		virtual ~FuzzyFactory();
 
 		Expression<T>* newAnd(Expression<T>*, Expression<T>*);
@@ -43,12 +52,13 @@ namespace fuzzy
 		void changeNot(Not<T>*);
 
 	private:
+		UnaryShadowExpression<T>* _not;
+		BinaryShadowExpression<T>* _or;
 		BinaryShadowExpression<T>* _and;
-		BinaryShadowExpression<T>* _or ;
 		BinaryShadowExpression<T>* _then;
 		BinaryShadowExpression<T>* _agg;
 		BinaryShadowExpression<T>* _defuzz;
-		UnaryShadowExpression<T>* _not;
+
 	};
 
 	template<class T>
@@ -64,36 +74,38 @@ namespace fuzzy
 
 	template<class T>
 	Expression<T>* FuzzyFactory<T>::newAnd(Expression<T>* l, Expression<T>* r) {
-		return newBinary(and, l, r);
+		return newBinary(_and, l, r);
 	};
 
 	template<class T>
 	Expression<T>* FuzzyFactory<T>::newOr(Expression<T>* l, Expression<T>* r) {
-		return newBinary(or , l, r);
+		return newBinary(_or , l, r);
 	};
 
 	template<class T>
 	Expression<T>* FuzzyFactory<T>::newThen(Expression<T>* l, Expression<T>* r) {
-		return newBinary(then, l, r);
+		return newBinary(_then, l, r);
 	};
 
 	template<class T>
 	Expression<T>* FuzzyFactory<T>::newAgg(Expression<T>* l, Expression<T>* r) {
-		return newBinary(agg, l, r);
+		return newBinary(_agg, l, r);
 	};
 
-	template<class T>
-	Expression<T>* FuzzyFactory<t>::newDefuzz(Expression<T>* l, Expression<T>* r, const T& min, const T& max, const T& step) {
-		r->setMin(min);
-		r->setMax(max);
-		r->setStep(step);
-		return newBinary(defuzz, l, r);
-	};
 
 	template<class T>
 	Expression<T>* FuzzyFactory<T>::newNot(Expression<T>* o) {
-		return newUnary(not, o);
+		return newUnary(_not, o);
 	};
+
+	template<class T>
+	Expression<T>* FuzzyFactory<T>::newDefuzz(Expression<T>* l, Expression<T>* r, const T& min, const T& max, const T& step) {
+		((CogDefuzz<T>*) r)->setMin(min);
+		((CogDefuzz<T>*) r)->setMax(max);
+		((CogDefuzz<T>*) r)->setStep(step);
+		return newBinary(_defuzz, l, r);
+	};
+
 
 	template<class T>
 	Expression<T>* FuzzyFactory<T>::newIs(Expression<T>* o, Is<T>* i) {
@@ -102,27 +114,27 @@ namespace fuzzy
 
 	template<class T>
 	void FuzzyFactory<T>::changeAnd(And<T>* o) {
-		and.setTarget(o);
+		_and.setTarget(o);
 	};
 
 	template<class T>
 	void FuzzyFactory<T>::changeOr(Or<T>* o) {
-		or .setTarget(o);
+		_or .setTarget(o);
 	};
 
 	template<class T>
 	void FuzzyFactory<T>::changeThen(Then<T>* o) {
-		then.setTarget(o);
+		_then.setTarget(o);
 	};
 
 	template<class T>
 	void FuzzyFactory<T>::changeAgg(Agg<T>* o) {
-		agg.setTarget(o);
+		_agg.setTarget(o);
 	};
 
 	template<class T>
 	void FuzzyFactory<T>::changeNot(Not<T>* o) {
-		not.setTarget(o);
+		_not.setTarget(o);
 	};
 }
 #endif

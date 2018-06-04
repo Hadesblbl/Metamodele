@@ -10,7 +10,7 @@ namespace core
 	template <class T>
 	class UnaryShadowExpression : public UnaryExpression<T> {
 	public:
-		UnaryShadowExpression() {};
+		UnaryShadowExpression(UnaryExpression<T>* target): _target(target) {};
 		virtual ~UnaryShadowExpression() {};
 		T evaluate(Expression<T>*) const;
 	private:
@@ -19,7 +19,7 @@ namespace core
 
 	template <class T>
 		T UnaryShadowExpression<T>::evaluate(Expression<T>* o) const{
-		if (_target == null) throw NullOperatorException;
+		if (_target == NULL) throw NullOperatorException;
 		_target ->evaluate(o);
 	};
 }

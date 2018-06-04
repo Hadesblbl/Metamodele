@@ -1,8 +1,8 @@
 #ifndef ANDMIN_H
 #define ANDMIN_H
 
-#include "BinaryExpression.h";
-#include "And.h";
+#include "BinaryExpression.h"
+#include "And.h"
 
 using namespace core;
 
