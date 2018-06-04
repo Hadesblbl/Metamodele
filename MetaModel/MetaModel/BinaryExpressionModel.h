@@ -1,8 +1,8 @@
 #ifndef BINARYEXPRESSIONMODEL_H
 #define BINARYEXPRESSIONMODEL_H
 
-#include "BinaryExpression.h";
-#include "Expression.h";
+#include "BinaryExpression.h"
+#include "Expression.h"
 #include "NullOperandException.h"
 #include "NullOperatorException.h"
 #include "LeftExpressionException.h"
@@ -33,7 +33,7 @@ namespace core
 	};
 
 	template <class T>
-	T BinaryExpressionModel<T>::evaluate(Expression *l, Expression *r) const {
+	T BinaryExpressionModel<T>::evaluate(Expression<T> *l, Expression<T> *r) const {
 		if (ope == null) {
 			throw NullOperatorException();
 		}
@@ -52,32 +52,32 @@ namespace core
 	};
 
 	template <class T>
-	BinaryExpression<T>* BinaryExpressionModel::getOperator() const {
+	BinaryExpression<T>* BinaryExpressionModel<T>::getOperator() const {
 		return this->_ope;
 	};
 
 	template <class T>
-	Expression<T>* BinaryExpressionModel::getLeft() const {
+	Expression<T>* BinaryExpressionModel<T>::getLeft() const {
 		return this->_l;
 	};
 
 	template <class T>
-	Expression<T>* BinaryExpressionModel::getRight() const {
+	Expression<T>* BinaryExpressionModel<T>::getRight() const {
 		return this->_r;
 	};
 
 	template <class T>
-	void BinaryExpressionModel::setOpe(BinaryExpression<T>* be) {
+	void BinaryExpressionModel<T>::setOpe(BinaryExpression<T>* be) {
 		_ope = be;
 	};
 
 	template <class T>
-	void BinaryExpressionModel::setLeft(Expression<T>* left) {
+	void BinaryExpressionModel<T>::setLeft(Expression<T>* left) {
 		_l = left;
 	};
 
 	template <class T>
-	void BinaryExpressionModel::setRight(Expression<T>* right) {
+	void BinaryExpressionModel<T>::setRight(Expression<T>* right) {
 		_r = right;
 	};
 }

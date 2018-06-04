@@ -2,6 +2,7 @@
 #define FUZZYFACTORY_H
 
 #include "ExpressionFactory.h"
+#include "Expression.h"
 
 #include "Agg.h"
 #include "Not.h"
@@ -9,6 +10,8 @@
 #include "is.h"
 #include "Then.h"
 #include "Or.h"
+
+#include "CogDefuzz.h"
 
 #include "UnaryShadowExpression.h"
 #include "BinaryShadowExpression.h"
@@ -20,11 +23,10 @@ using namespace core;
 namespace fuzzy
 {
 	template<class T>
-	class FuzzyFactory : ExpressionFactory<T> {
+	class FuzzyFactory : public ExpressionFactory<T> {
 	public:
-		FuzzyFactory() {};
-		FuzzyFactory(Not<T>* _not, And<T>* _and, Or<T>* _or, Then<T>* _then, Agg<T>* _agg, CogDefuzz<T>* _defuzz) : not(_not), and(_then), or(_or), then(_then), agg(_agg), defuzz(_defuzz) {};
-		virtual ~FuzzyFactory() {};
+		FuzzyFactory(Not<T>* not , And<T>* and, Or<T>* or , Then<T>* then, Agg<T>* agg, CogDefuzz<T>* defuzz) : _not(not), _and(and), _or(or ), _then(then), _agg(agg), _defuzz(defuzz) {};
+		virtual ~FuzzyFactory();
 
 		Expression<T>* newAnd(Expression<T>*, Expression<T>*);
 		Expression<T>* newOr(Expression<T>*, Expression<T>*);
@@ -41,23 +43,23 @@ namespace fuzzy
 		void changeNot(Not<T>*);
 
 	private:
-		BinaryShadowExpression<T>* and;
-		BinaryShadowExpression<T>* or ;
-		BinaryShadowExpression<T>* then;
-		BinaryShadowExpression<T>* agg;
-		BinaryShadowExpression<T>* defuzz;
-		UnaryShadowExpression<T>* not;
+		BinaryShadowExpression<T>* _and;
+		BinaryShadowExpression<T>* _or ;
+		BinaryShadowExpression<T>* _then;
+		BinaryShadowExpression<T>* _agg;
+		BinaryShadowExpression<T>* _defuzz;
+		UnaryShadowExpression<T>* _not;
 	};
 
 	template<class T>
-	FuzzyFactory::~FuzzyFactory()
+	FuzzyFactory<T>::~FuzzyFactory()
 	{
-		delete and;
-		delete or;
-		delete then;
-		delete agg;
-		delete defuzz;
-		delete not;
+		delete _and;
+		delete _or;
+		delete _then;
+		delete _agg;
+		delete _defuzz;
+		delete _not;
 	};
 
 	template<class T>
@@ -82,7 +84,10 @@ namespace fuzzy
 
 	template<class T>
 	Expression<T>* FuzzyFactory<t>::newDefuzz(Expression<T>* l, Expression<T>* r, const T& min, const T& max, const T& step) {
-		return newBinary(defuzz, l, r, min, max, step);
+		r->setMin(min);
+		r->setMax(max);
+		r->setStep(step);
+		return newBinary(defuzz, l, r);
 	};
 
 	template<class T>

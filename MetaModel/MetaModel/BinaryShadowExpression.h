@@ -9,13 +9,13 @@
 namespace core
 {
 	template <class T>
-	class BinaryShadowExpression : public BinaryExpression {
+	class BinaryShadowExpression : public BinaryExpression<T> {
 	public:
 		BinaryShadowExpression() {};
 		T evaluate(Expression<T>*, Expression<T>*);
 		void setTarget(BinaryExpression<T>*);
 	private:
-		BinaryExpression<T> target;
+		BinaryExpression<T>* target;
 	};
 
 	template <class T>
