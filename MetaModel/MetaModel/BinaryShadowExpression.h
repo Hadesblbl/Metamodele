@@ -5,6 +5,7 @@
 #include "BinaryExpression.h"
 #include "BinaryExpressionModel.h"
 #include "Expression.h"
+#include <stdexcept>
 
 namespace core
 {
@@ -22,6 +23,7 @@ namespace core
 	template <class T>
     T BinaryShadowExpression<T>::evaluate(Expression<T>* l, Expression<T>* r) const{
 		if (target == NULL) throw new NullOperatorException();
+		if (target->evaluate(l, r) == 0) throw std::overflow_error("Divide by zero exception");
 		return target->evaluate(l, r);
 	}
 

@@ -32,7 +32,7 @@ int main()
     IsTriangle<int> average(10, 15, 20);
     IsTriangle<int> generous(20, 25, 30);
     //values
-    ValueModel<int> service(0);
+	ValueModel<int> service(0);
     ValueModel<int> food(0);
     ValueModel<int> tips(0);
     Expression<int>* r = f.newAgg(

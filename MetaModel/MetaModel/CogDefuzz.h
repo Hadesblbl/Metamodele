@@ -4,6 +4,8 @@
 #include "MamdaniDefuzz.h"
 #include "ValueModel.h"
 #include <stdio.h>
+#include <stdexcept>
+
 using namespace core;
 
 namespace fuzzy
@@ -35,7 +37,8 @@ namespace fuzzy
 			area += value;
 			weightedArea += value * i;
 		}
-		return weightedArea / area;
+		if (area == 0) { return -1; }
+		else { return weightedArea / area; }
 	}
 
 	template<class T>
