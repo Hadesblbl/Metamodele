@@ -5,6 +5,8 @@
 #include "UnaryExpression.h"
 #include "BinaryExpression.h"
 #include "NaryExpression.h"
+#include "UnaryExpressionModel.h"
+#include "BinaryExpressionModel.h"
 #include <vector>
 
 using namespace std;
@@ -27,7 +29,7 @@ namespace core {
 	template<class T>
 	ExpressionFactory<T>::~ExpressionFactory() {
 
-		for (vector<Expression<T>*>::iterator it = memory.begin(); it != memory.end(); it++)
+        for (typename vector<Expression<T>*>::iterator it = memory.begin(); it != memory.end(); it++)
 		{
 			delete* it;
 		}
@@ -41,12 +43,12 @@ namespace core {
 
 	template<class T>
 	Expression<T>* ExpressionFactory<T>::newUnary(UnaryExpression<T>* ope, Expression<T>* o) {
-		return hold(new UnaryExpressionModel(ope, o));
+		return this->hold(new UnaryExpressionModel<T>(ope, o));
 	};
 
 	template<class T>
 	Expression<T>* ExpressionFactory<T>::newBinary(BinaryExpression<T>* ope, Expression<T>* l, Expression<T>* r) {
-		return hold(new BinaryExpressionModel(ope, l, r));
+		return this->hold(new BinaryExpressionModel<T>(ope, l, r));
 	};
 }
 //newNary

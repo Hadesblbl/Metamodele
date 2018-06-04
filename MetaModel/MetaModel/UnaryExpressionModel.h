@@ -1,8 +1,8 @@
 #ifndef UNARYEXPRESSIONMODEL_H
 #define UNARYEXPRESSIONMODEL_H
 
-#include "UnaryExpression.h";
-#include "Expression.h";
+#include "UnaryExpression.h"
+#include "Expression.h"
 #include "NullOperatorException.h"
 #include "NullOperandException.h"
 
@@ -27,8 +27,8 @@ namespace core
 	};
 
 	template <class T>
-	T UnaryExpressionModel<T>::evaluate(Expression *o) const {
-		if (_ope == null) {
+	T UnaryExpressionModel<T>::evaluate(Expression<T> *o) const {
+		if (_ope == NULL) {
 			throw NullOperatorException();
 		}
 		return _ope->evaluate(o);
@@ -36,7 +36,7 @@ namespace core
 
 	template <class T>
 	T UnaryExpressionModel<T>::evaluate() const {
-		if (_operand == null) {
+		if (_operand == NULL) {
 			throw NullOperandException();
 		}
 		return evaluate(_operand);

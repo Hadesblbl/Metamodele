@@ -20,15 +20,15 @@ namespace core
 	};
 
 	template <class T>
-		T BinaryShadowExpression<T>::evaluate(Expression<T>* l, Expression<T>* r) const{
-		if (target == NULL) throw nullOperatorException;
-		target.evaluate(l, r);
-	};
+    T BinaryShadowExpression<T>::evaluate(Expression<T>* l, Expression<T>* r) const{
+		if (target == NULL) throw new NullOperatorException();
+		return target->evaluate(l, r);
+	}
 
 	template <class T>
 		void BinaryShadowExpression<T>::setTarget(BinaryExpression<T>* t) {
 		target = t;
-	};
+	}
 
 }
 

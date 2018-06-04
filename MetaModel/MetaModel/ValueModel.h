@@ -11,8 +11,10 @@ namespace core
 		ValueModel() {};
 		ValueModel(const T& v) : _val(v) {};
 		~ValueModel() {};
-
+        
 		void setValue(const T&);
+        
+        T evaluate() const;
 	private:
 		T _val;
 	};
@@ -23,8 +25,8 @@ namespace core
 	};
 
 	template <class T>
-	T ValueModel<T>::Expression<T>::evaluate() const {
-		return value;
+	T ValueModel<T>::evaluate() const {
+		return _val;
 	};
 }
 #endif // !VALUE_H

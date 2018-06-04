@@ -5,7 +5,7 @@
 
 namespace core {
 	template <class T>
-	class UnaryExpression abstract {
+	class UnaryExpression {
 	public:
 		virtual T evaluate(Expression<T> *o) const = 0;
 	};

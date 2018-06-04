@@ -8,7 +8,7 @@ using namespace std;
 
 namespace core {
 	template <class T>
-	class NaryExpression abstract {
+	class NaryExpression {
 	public:
 		virtual T evaluate(vector<Expression<T>*>*) const=0;
 	};

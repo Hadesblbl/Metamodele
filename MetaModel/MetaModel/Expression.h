@@ -3,7 +3,7 @@
 
 namespace core {
 	template <class T>
-	class Expression abstract {
+	class Expression {
 	public:
 		virtual T evaluate() const;
 	};

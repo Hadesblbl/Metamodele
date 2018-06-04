@@ -84,18 +84,18 @@ namespace fuzzy
 
 	template<class T>
 	Expression<T>* FuzzyFactory<T>::newThen(Expression<T>* l, Expression<T>* r) {
-		return newBinary(_then, l, r);
+		return this->newBinary(_then, l, r);
 	};
 
 	template<class T>
 	Expression<T>* FuzzyFactory<T>::newAgg(Expression<T>* l, Expression<T>* r) {
-		return newBinary(_agg, l, r);
+		return this->newBinary(_agg, l, r);
 	};
 
 
 	template<class T>
 	Expression<T>* FuzzyFactory<T>::newNot(Expression<T>* o) {
-		return newUnary(_not, o);
+		return this->newUnary(_not, o);
 	};
 
 	template<class T>
@@ -103,38 +103,38 @@ namespace fuzzy
 		((CogDefuzz<T>*) r)->setMin(min);
 		((CogDefuzz<T>*) r)->setMax(max);
 		((CogDefuzz<T>*) r)->setStep(step);
-		return newBinary(_defuzz, l, r);
+		return this->newBinary(_defuzz, l, r);
 	};
 
 
 	template<class T>
 	Expression<T>* FuzzyFactory<T>::newIs(Expression<T>* o, Is<T>* i) {
-		return newUnary(i, o);
+		return this->newUnary(i, o);
 	};
 
 	template<class T>
 	void FuzzyFactory<T>::changeAnd(And<T>* o) {
-		_and.setTarget(o);
+		_and->setTarget(o);
 	};
 
 	template<class T>
 	void FuzzyFactory<T>::changeOr(Or<T>* o) {
-		_or .setTarget(o);
+		_or->setTarget(o);
 	};
 
 	template<class T>
 	void FuzzyFactory<T>::changeThen(Then<T>* o) {
-		_then.setTarget(o);
+		_then->setTarget(o);
 	};
 
 	template<class T>
 	void FuzzyFactory<T>::changeAgg(Agg<T>* o) {
-		_agg.setTarget(o);
+		_agg->setTarget(o);
 	};
 
 	template<class T>
 	void FuzzyFactory<T>::changeNot(Not<T>* o) {
-		_not.setTarget(o);
+		_not->setTarget(o);
 	};
 }
 #endif

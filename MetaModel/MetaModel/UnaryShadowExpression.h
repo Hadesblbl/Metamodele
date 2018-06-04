@@ -18,9 +18,9 @@ namespace core
 	};
 
 	template <class T>
-		T UnaryShadowExpression<T>::evaluate(Expression<T>* o) const{
-		if (_target == NULL) throw NullOperatorException;
-		_target ->evaluate(o);
-	};
+    T UnaryShadowExpression<T>::evaluate(Expression<T>* o) const{
+		if (_target == NULL) throw new NullOperatorException();
+		return _target->evaluate(o);
+	}
 }
 #endif

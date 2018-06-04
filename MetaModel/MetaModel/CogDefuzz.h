@@ -15,9 +15,9 @@ namespace fuzzy
 		virtual ~CogDefuzz() {};
 		
 		T evaluate(Expression<T>*, Expression<T>*) const;
-		void setMin(T&);
-		void setMax(T&);
-		void setStep(T&);
+		void setMin(const T&);
+		void setMax(const T&);
+		void setStep(const T&);
 
 	private:
 		T _min;
@@ -30,8 +30,8 @@ namespace fuzzy
 		T area = 0;
 		T weightedArea = 0;
 		for (int i = _min; i < _max; i += _step) {
-			(ValueModel<T> l).setValue(i);
-			T value = r.evaluate();
+            ((ValueModel<T>*) l)->setValue(i);
+			T value = r->evaluate();
 			area += value;
 			weightedArea += value * i;
 		}
@@ -39,17 +39,17 @@ namespace fuzzy
 	}
 
 	template<class T>
-	void CogDefuzz<T>::setMin(T& min) {
+	void CogDefuzz<T>::setMin(const T& min) {
 		_min = min;
 	}
 
 	template<class T>
-	void CogDefuzz<T>::setMax(T& max) {
+	void CogDefuzz<T>::setMax(const T& max) {
 		_max = max;
 	}
 
 	template<class T>
-	void CogDefuzz<T>::setStep(T& step) {
+	void CogDefuzz<T>::setStep(const T& step) {
 		_step = step;
 	}
 }

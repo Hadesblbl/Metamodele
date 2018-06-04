@@ -28,24 +28,24 @@ namespace core
 
 	private:
 		BinaryExpression<T>* _ope;
-		Expression<T> *l;
-		Expression<T> *r;
+		Expression<T> * _l;
+		Expression<T> * _r;
 	};
 
 	template <class T>
 	T BinaryExpressionModel<T>::evaluate(Expression<T> *l, Expression<T> *r) const {
-		if (ope == null) {
+		if (_ope == NULL) {
 			throw NullOperatorException();
 		}
-		return ope->evaluate(l, r);
+		return _ope->evaluate(l, r);
 	};
 
 	template <class T>
 	T BinaryExpressionModel<T>::evaluate() const {
-		if (_l == null) {
+		if (_l == NULL) {
 			throw LeftExpressionException();
 		}
-		if (_r == null) {
+		if (_r == NULL) {
 			throw RightExpressionException();
 		}
 		return evaluate(_l, _r);
