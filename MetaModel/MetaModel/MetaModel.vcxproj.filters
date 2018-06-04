@@ -84,9 +84,6 @@
     <ClInclude Include="NullOperatorException.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="FuzzyFactory.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="LeftExpressionException.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
@@ -136,6 +133,9 @@
       <Filter>Fichiers d%27en-tête\Fuzzy</Filter>
     </ClInclude>
     <ClInclude Include="isTriangle.h">
+      <Filter>Fichiers d%27en-tête\Fuzzy</Filter>
+    </ClInclude>
+    <ClInclude Include="FuzzyFactory.h">
       <Filter>Fichiers d%27en-tête\Fuzzy</Filter>
     </ClInclude>
   </ItemGroup>

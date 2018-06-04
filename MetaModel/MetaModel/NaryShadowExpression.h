@@ -1,24 +1,28 @@
 #ifndef NARYSHADOWEXPRESSION_H
 #define NARYSHADOWEXPRESSION_H
 
-using namespace core;
-template <class T>
-class NaryShadowExpression : public NaryExpression{
-    public:
-        NaryShadowExpression();
-        T evaluate(Expression<T>[] *);
-        void setTarget(NaryExpression<T>*);
-    private:
-        NaryExpression<T> target;
-}
+namespace core
+{
+	template <class T>
+	class NaryShadowExpression : public NaryExpression {
+	public:
+		NaryShadowExpression(NaryExpression<T>* target) : _target(target) {};
+		T evaluate(vector<Expression<T>*>*) const;
+		void setTarget(NaryExpression<T>*);
+	private:
+		NaryExpression<T>* _target;
+	};
 
-public T NaryShadowExpression<T>::evaluate(Expression<T>[]* o){
-    if (target==null) throw NullOperatorException;
-    target.evaluate(o);
-}
+	template <class T>
+		T NaryShadowExpression<T>::evaluate(vector<Expression<T>*>* operands) const{
+		if (_target == null) throw NullOperatorException();
+		_target->evaluate(operands);
+	};
 
-public void NaryShadowExpression::setTarget(NaryExpression<T>* exp){
-    target=exp;
-}
+	template <class T>
+		void NaryShadowExpression::setTarget(NaryExpression<T>* exp) {
+		_target = exp;
+	};
 
+}
 #endif

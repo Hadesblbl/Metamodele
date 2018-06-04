@@ -1,19 +1,26 @@
 #ifndef UNARYSHADOWEXPRESSION_H
 #define UNARYSHADOWEXPRESSION_H
 
-using namespace core;
-template <class T>
-class UnaryShadowExpression : public UnaryExpression{
-    public:
-        UnaryShadowExpression();
-        T evaluate(Expression<T>*);
-    private:
-        UnaryExpression<T> target;
-}
+#include "UnaryExpression.h"
+#include "Expression.h"
+#include "NullOperatorException.h"
 
-public T UnaryShadowExpression<T>::evaluate(Expression<T>* o){
-    if (target==null) throw NullOperatorException;
-    target.evaluate(o);
-}
+namespace core
+{
+	template <class T>
+	class UnaryShadowExpression : public UnaryExpression {
+	public:
+		UnaryShadowExpression() {};
+		virtual ~UnaryShadowExpression() {};
+		T evaluate(Expression<T>*) const;
+	private:
+		UnaryExpression<T>* _target;
+	};
 
+	template <class T>
+		T UnaryShadowExpression<T>::evaluate(Expression<T>* o) const{
+		if (_target == null) throw NullOperatorException;
+		_target ->evaluate(o);
+	};
+}
 #endif

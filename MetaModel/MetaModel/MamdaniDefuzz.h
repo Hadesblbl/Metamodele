@@ -1,18 +1,39 @@
-#ifndef MamdaniDefuzz_H
-#define MamdaniDefuzz_H
+#ifndef MAMDANIDEFUZZ_H
+#define MAMDANIDEFUZZ_H
 
-namespace Fuzzy {
+#include "BinaryExpression.h"
+#include "Evaluator.h"
+#include <vector>
+
+using namespace std;
+
+namespace Fuzzy 
+{
 	template <class T>
-	class MamdaniDefuzz abstract {
+	class MamdaniDefuzz: public BinaryExpression<T> {
 	public:
-		virtual T evaluate() const;
-		shape* buildshape(int min,int max,int step);
-		virtual defuzz(const shape*) = 0;
+
+		typedef pair <vector<T>, vector<T>> Shape;
+
+		MamdaniDefuzz(const T& min, const T& max, const T& step) : _min(min), _max(max), _step(step) {};
+		virtual ~MamdaniDefuzz() {};
+
+		virtual T evaluate(Expression<T>*, Expression<T>*) const;
+
+	protected:
+		virtual T defuzz(const shape&) = 0;
+
+	private:
+		T _min;
+		T _max;
+		T _step;
 	};
 
 	template <class T>
-	T MamdaniDefuzz<T>::evaluate() const {
-		defuzz(buildshape(min,max,step));
+	T MamdaniDefuzz<T>::evaluate(Expression<T>* l, Expression<T>* r) const {
+		Evaluator<T> eval;
+		Evaluator<T>::Shape shape = eval.BuildShape(_min, _max, _step, (ValueModel<T>*) l, r);
+		return defuzz(shape);
 	}
 }
 #endif
