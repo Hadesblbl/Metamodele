@@ -16,26 +16,26 @@ using namespace core;
 
 int main()
 {
-    NotMinus1<int> opNot;
-    AndMin<int> opAnd;
-    OrMax<int> opOr;
-	AggMax<int> opAgg;
-    ThenMin<int> opThen;
-    CogDefuzz<int> opDefuzz;
+    NotMinus1<float> opNot;
+    AndMin<float> opAnd;
+    OrMax<float> opOr;
+	AggMax<float> opAgg;
+    ThenMin<float> opThen;
+    CogDefuzz<float> opDefuzz;
     //fuzzy expession factory
-	FuzzyFactory<int> f(&opNot, &opAnd, &opOr, &opThen, &opAgg, &opDefuzz);
+	FuzzyFactory<float> f(&opNot, &opAnd, &opOr, &opThen, &opAgg, &opDefuzz);
     //membership function
-    IsTriangle<int> poor(-5, 0, 5);
-    IsTriangle<int> good(0, 5, 10);
-    IsTriangle<int> excellent(5, 10, 15);
-    IsTriangle<int> cheap(0, 5, 10);
-    IsTriangle<int> average(10, 15, 20);
-    IsTriangle<int> generous(20, 25, 30);
+    IsTriangle<float> poor(-5, 0, 5);
+    IsTriangle<float> good(0, 5, 10);
+    IsTriangle<float> excellent(5, 10, 15);
+    IsTriangle<float> cheap(0, 5, 10);
+    IsTriangle<float> average(10, 15, 20);
+    IsTriangle<float> generous(20, 25, 30);
     //values
-	ValueModel<int> service(0);
-    ValueModel<int> food(0);
-    ValueModel<int> tips(0);
-    Expression<int>* r = f.newAgg(
+	ValueModel<float> service(0);
+    ValueModel<float> food(0);
+    ValueModel<float> tips(0);
+    Expression<float>* r = f.newAgg(
         f.newAgg(
             f.newThen(
                 f.newIs(&service, &poor),
@@ -47,9 +47,9 @@ int main()
             f.newIs(&service, &excellent),
             f.newIs(&tips, &generous)));
     //defuzzification
-    Expression<int>* system = f.newDefuzz(&tips, r, 0, 25, 1);
+    Expression<float>* system = f.newDefuzz(&tips, r, 0, 25, 1);
     //apply input
-    int s;
+    float s;
     while (true)
     {
         std::cout << "service : ";

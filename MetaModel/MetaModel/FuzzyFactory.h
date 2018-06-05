@@ -100,9 +100,10 @@ namespace fuzzy
 
 	template<class T>
 	Expression<T>* FuzzyFactory<T>::newDefuzz(Expression<T>* l, Expression<T>* r, const T& min, const T& max, const T& step) {
-		((CogDefuzz<T>*) r)->setMin(min);
-		((CogDefuzz<T>*) r)->setMax(max);
-		((CogDefuzz<T>*) r)->setStep(step);
+        CogDefuzz<T>* cogdefuzz=(CogDefuzz<T>*) _defuzz->getTarget();
+		cogdefuzz->setMin(min);
+		cogdefuzz->setMax(max);
+		cogdefuzz->setStep(step);
 		return this->newBinary(_defuzz, l, r);
 	};
 
