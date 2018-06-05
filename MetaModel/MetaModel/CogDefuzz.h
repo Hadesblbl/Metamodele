@@ -40,21 +40,21 @@ namespace fuzzy
 		}
 		if (area == 0) { return -1; }
 		else { return weightedArea / area; }
-	}
+	};
 
 	template<class T>
 	void CogDefuzz<T>::setMin(const T& min) {
 		_min = min;
-	}
+	};
 
 	template<class T>
 	void CogDefuzz<T>::setMax(const T& max) {
 		_max = max;
-	}
+	};
 
 	template<class T>
 	void CogDefuzz<T>::setStep(const T& step) {
 		_step = step;
-	}
+	};
 }
 #endif
