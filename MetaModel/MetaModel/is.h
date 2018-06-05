@@ -8,6 +8,8 @@ namespace fuzzy
 {
 	template <class T>
 	class Is : public UnaryExpression<T> {
+	public:
+		virtual ~Is() {};
 	};
 }
 #endif /* is_h */

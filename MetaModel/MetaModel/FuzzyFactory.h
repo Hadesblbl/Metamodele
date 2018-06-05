@@ -139,5 +139,3 @@ namespace fuzzy
 	};
 }
 #endif
-
-//Pensez a ajouter les sugenoDefuzz, SugenoConclusion, MamdaniDefuzz

@@ -3,6 +3,7 @@
 
 #include "BinaryExpression.h"
 #include "Or.h"
+#include "Expression.h"
 #include <algorithm>
 
 using namespace core;

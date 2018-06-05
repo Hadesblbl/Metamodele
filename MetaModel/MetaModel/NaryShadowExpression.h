@@ -1,5 +1,8 @@
 #ifndef NARYSHADOWEXPRESSION_H
 #define NARYSHADOWEXPRESSION_H
+#include "NaryExpression.h"
+#include "Expression.h"
+#include "NullOperatorException.h"
 
 namespace core
 {

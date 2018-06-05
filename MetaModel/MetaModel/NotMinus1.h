@@ -3,6 +3,8 @@
 
 #include "UnaryExpression.h"
 #include "Not.h"
+#include "Expression.h"
+
 using namespace core;
 
 namespace fuzzy
@@ -21,4 +23,4 @@ namespace fuzzy
 		return 1 - val;
 	};
 }
-#endif /* AggMax_h */
+#endif /* NotMinus1_h */

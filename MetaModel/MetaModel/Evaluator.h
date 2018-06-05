@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "ValueModel.h"
+#include "Expression.h"
 
 using namespace std;
 
@@ -30,7 +31,7 @@ namespace core
 			x.push_back(i);
 		}
 		return Shape(x, y);
-	}
+	};
 
 	template <class T>
 	ostream& Evaluator<T>::PrintShape(ostream& os, const Shape& s) const
@@ -47,6 +48,6 @@ namespace core
 			os << *it << ' ';
 		os << ']';
 		return os;
-	}
+	};
 }
 #endif

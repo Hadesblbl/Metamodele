@@ -2,6 +2,7 @@
 #define SUGENOTHEN_H
 
 #include "Then.h"
+#include "Expression.h"
 
 template<class T>
 class SugenoThen : public Then{
@@ -10,6 +11,6 @@ class SugenoThen : public Then{
         T premiseValue();
     private:
         T premiseValue;
-}
+};
 
 #endif

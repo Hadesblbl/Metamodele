@@ -81,4 +81,4 @@ namespace core
 		_r = right;
 	};
 }
-#endif /* UNARYEXPRESSIONMODEL_H */
+#endif /* BINARYEXPRESSIONMODEL_H */

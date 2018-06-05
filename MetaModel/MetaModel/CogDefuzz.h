@@ -3,6 +3,7 @@
 
 #include "MamdaniDefuzz.h"
 #include "ValueModel.h"
+#include "Expression.h"
 #include <stdio.h>
 #include <stdexcept>
 

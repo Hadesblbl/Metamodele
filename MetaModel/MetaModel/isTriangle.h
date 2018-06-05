@@ -36,4 +36,4 @@ namespace fuzzy
 	}
 
 }
-#endif /* AggMax_h */
+#endif /* isTriangle_h */

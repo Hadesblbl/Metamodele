@@ -3,6 +3,7 @@
 
 #include "BinaryExpression.h"
 #include "Then.h"
+#include "Expression.h"
 
 using namespace core;
 

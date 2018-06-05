@@ -1,2 +1,7 @@
 ﻿  Main.cpp
-LINK : fatal error LNK1168: impossible d'ouvrir D:\Documents\ENSISA\2A_IR\S2\Framework\bis\Metamodele\MetaModel\Debug\MetaModel.exe pour écrire
+c:\users\thomas\desktop\nuit de l'info\2017\github\metamodele\metamodel\metamodel\cogdefuzz.h(35): warning C4244: 'initialisation' : conversion de 'const float' en 'int', perte possible de données
+  c:\users\thomas\desktop\nuit de l'info\2017\github\metamodele\metamodel\metamodel\cogdefuzz.h(32): note: pendant la compilation de la fonction membre '<Inconnu>' (classe <Inconnu>)
+  c:\users\thomas\desktop\nuit de l'info\2017\github\metamodele\metamodel\metamodel\main.cpp(24): note: voir la référence à l'instanciation de classe modèle 'fuzzy::CogDefuzz<float>' en cours de compilation
+c:\users\thomas\desktop\nuit de l'info\2017\github\metamodele\metamodel\metamodel\cogdefuzz.h(35): warning C4244: '+=' : conversion de 'const float' en 'int', perte possible de données
+c:\users\thomas\desktop\nuit de l'info\2017\github\metamodele\metamodel\metamodel\cogdefuzz.h(36): warning C4244: 'argument' : conversion de 'int' en 'const float', perte possible de données
+  MetaModel.vcxproj -> C:\Users\Thomas\Desktop\Nuit de l'info\2017\github\Metamodele\MetaModel\Debug\MetaModel.exe

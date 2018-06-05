@@ -2,6 +2,7 @@
 #define OrPlus_h
 #include "BinaryExpression.h"
 #include "Or.h"
+#include "Expression.h"
 
 using namespace core;
 

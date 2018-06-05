@@ -3,6 +3,7 @@
 
 #include "BinaryExpression.h";
 #include "Then.h";
+#include "Expression.h"
 
 using namespace core;
 
@@ -21,6 +22,6 @@ namespace fuzzy
 		T left = l->evaluate();
 		T right = r->evaluate();
 		return left * right;
-	}
+	};
 }
 #endif /* ThenMult_h */
