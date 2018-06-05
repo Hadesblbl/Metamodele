@@ -14,7 +14,9 @@ namespace core
 	public:
 		BinaryShadowExpression(BinaryExpression<T>* target ) : target(target) {};
 		virtual ~BinaryShadowExpression() {};
+        
 		T evaluate(Expression<T>*, Expression<T>*) const;
+        BinaryExpression<T>* getTarget();
 		void setTarget(BinaryExpression<T>*);
 	private:
 		BinaryExpression<T>* target;
@@ -23,12 +25,16 @@ namespace core
 	template <class T>
     T BinaryShadowExpression<T>::evaluate(Expression<T>* l, Expression<T>* r) const{
 		if (target == NULL) throw new NullOperatorException();
-		if (target->evaluate(l, r) == 0) throw std::overflow_error("Divide by zero exception");
 		return target->evaluate(l, r);
 	}
 
+    template <class T>
+    BinaryExpression<T>* BinaryShadowExpression<T>::getTarget() {
+        return target;
+    }
+    
 	template <class T>
-		void BinaryShadowExpression<T>::setTarget(BinaryExpression<T>* t) {
+    void BinaryShadowExpression<T>::setTarget(BinaryExpression<T>* t) {
 		target = t;
 	}
 
