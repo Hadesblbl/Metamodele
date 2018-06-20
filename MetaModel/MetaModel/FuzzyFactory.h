@@ -33,7 +33,8 @@ namespace fuzzy
 			_agg(new BinaryShadowExpression<T>(_agg)),
 			_defuzz(new BinaryShadowExpression<T>(_defuzz))
 		{};
-		// WTF?
+
+		ValueModel<T>* newValue(T);
 
 		virtual ~FuzzyFactory();
 
@@ -44,12 +45,15 @@ namespace fuzzy
 		Expression<T>* newDefuzz(Expression<T>*, Expression<T>*, const T&, const T&, const T&);
 		Expression<T>* newNot(Expression<T>*);
 		Expression<T>* newIs(Expression<T>*, Is<T>*);
+		NaryExpression<T>* newSugeno(std::vector<Expression<T>*>);
 
 		void changeAnd(And<T>*);
 		void changeOr(Or<T>*);
 		void changeThen(Then<T>*);
 		void changeAgg(Agg<T>*);
 		void changeNot(Not<T>*);
+		void changeDefuzz(BinaryExpression<T>*);
+		void changeSugeno(NaryExpression<T>*);
 
 	private:
 		UnaryShadowExpression<T>* _not;
@@ -58,7 +62,7 @@ namespace fuzzy
 		BinaryShadowExpression<T>* _then;
 		BinaryShadowExpression<T>* _agg;
 		BinaryShadowExpression<T>* _defuzz;
-
+		NaryShadowExpression<T>* _sugeno;
 	};
 
 	template<class T>
@@ -70,6 +74,11 @@ namespace fuzzy
 		delete _agg;
 		delete _defuzz;
 		delete _not;
+		delete _sugeno;
+	};
+
+	template <class T> ValueModel<T>* FuzzyFactory<T>::newValue(T val) {
+		return new ValueModel<T>(val);
 	};
 
 	template<class T>
@@ -136,6 +145,16 @@ namespace fuzzy
 	template<class T>
 	void FuzzyFactory<T>::changeNot(Not<T>* o) {
 		_not->setTarget(o);
+	};
+
+	template<class T>
+	void FuzzyFactory<T>::changeSugeno(NaryExpression<T>* o) {
+		_sugeno->setTarget(o);
+	};
+
+	template<class T>
+	void FuzzyFactory<T>::changeDefuzz(BinaryExpression<T>* o) {
+		_defuzz->setTarget(o);
 	};
 }
 #endif

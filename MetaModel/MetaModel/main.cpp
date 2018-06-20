@@ -1,15 +1,20 @@
 #include <iostream>
 
-#include "FuzzyFactory.h"
 #include "ValueModel.h"
-#include "NotMinus1.h"
-#include "And.h"
 #include "AndMin.h"
+#include "AndMult.h"
 #include "OrMax.h"
-#include "ThenMin.h"
-#include "CogDefuzz.h"
-#include "isTriangle.h"
+#include "OrPlus.h"
 #include "AggMax.h"
+#include "CogDefuzz.h"
+#include "IsTriangle.h"
+#include "NotMinus1.h"
+#include "ThenMin.h"
+#include "SugenoThen.h"
+#include "SugenoConclusion.h"
+#include "SugenoDefuzz.h"
+#include "FuzzyFactory.h"
+#include <iostream>
 
 using namespace fuzzy;
 using namespace core;
