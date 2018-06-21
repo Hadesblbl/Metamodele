@@ -40,7 +40,7 @@ namespace fuzzy {
 			den += y;
 		};
 		std::cout << "num: " << num << " ,den: " << den << std::endl;
-		return num / end;
+		return num / den;
 	};
 };
 #endif

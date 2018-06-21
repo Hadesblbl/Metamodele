@@ -19,8 +19,8 @@ namespace core
 	template <class T>
 		T NaryShadowExpression<T>::evaluate(vector<Expression<T>*> operands) const{
 		if (_target == NULL) throw new NullOperatorException();
-		_target->evaluate(operands);
-	};
+		return _target->evaluate(operands);
+        };
 
 	template <class T>
 		void NaryShadowExpression<T>::setTarget(NaryExpression<T>* exp) {

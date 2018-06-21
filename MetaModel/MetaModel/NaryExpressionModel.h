@@ -1,8 +1,8 @@
 #ifndef NARYEXPRESSIONMODEL_H
 #define NARYEXPRESSIONMODEL_H
 
-#include "NaryExpression.h";
-#include "Expression.h";
+#include "NaryExpression.h"
+#include "Expression.h"
 #include "NaryExpressionException.h"
 
 using namespace std;

@@ -1,4 +1,4 @@
-#include <exception>;
+#include <exception>
 using namespace std;
 
 class NaryExceptionException : public exception {
