@@ -30,5 +30,5 @@ namespace core
 	T ValueModel<T>::evaluate() const {
 		return this->_val;
 	};
-}
+};
 #endif // !VALUE_H

@@ -14,7 +14,7 @@ namespace fuzzy
 	template <class T>
 	class CogDefuzz : public MamdaniDefuzz<T> {
 	public:
-		CogDefuzz(){};
+		CogDefuzz(T _min, T _max, T _step);
 		virtual ~CogDefuzz() {};
 		
 		T evaluate(Expression<T>*, Expression<T>*) const;
@@ -23,16 +23,20 @@ namespace fuzzy
 		void setStep(const T&);
 
 	private:
-		T _min;
-		T _max;
-		T _step;
+		T min;
+		T max;
+		T step;
 	};
+
+	template <class T> 
+	CogDefuzz<T>::CogDefuzz(T _min, T _max, T _step) :MamdaniDefuzz<T>(_min, _max, _step)
+	{};
 
 	template <class T>
 	T CogDefuzz<T>::evaluate(Expression<T>* l, Expression<T>* r) const {
 		T area = 0;
 		T weightedArea = 0;
-		for (int i = _min; i < _max; i += _step) {
+		for (int i = min; i < max; i += step) {
             ((ValueModel<T>*) l)->setValue(i);
 			T value = r->evaluate();
 			area += value;
@@ -43,18 +47,18 @@ namespace fuzzy
 	};
 
 	template<class T>
-	void CogDefuzz<T>::setMin(const T& min) {
-		_min = min;
+	void CogDefuzz<T>::setMin(const T& _min) {
+		min = _min;
 	};
 
 	template<class T>
-	void CogDefuzz<T>::setMax(const T& max) {
-		_max = max;
+	void CogDefuzz<T>::setMax(const T& _max) {
+		max = _max;
 	};
 
 	template<class T>
-	void CogDefuzz<T>::setStep(const T& step) {
-		_step = step;
+	void CogDefuzz<T>::setStep(const T& _step) {
+		step = _step;
 	};
 }
 #endif

@@ -10,14 +10,14 @@ namespace core
 	class NaryShadowExpression : public NaryExpression<T> {
 	public:
 		NaryShadowExpression(NaryExpression<T>* target) : _target(target) {};
-		T evaluate(vector<Expression<T>*>*) const;
+		T evaluate(vector<Expression<T>*>) const;
 		void setTarget(NaryExpression<T>*);
 	private:
 		NaryExpression<T>* _target;
 	};
 
 	template <class T>
-		T NaryShadowExpression<T>::evaluate(vector<Expression<T>*>* operands) const{
+		T NaryShadowExpression<T>::evaluate(vector<Expression<T>*> operands) const{
 		if (_target == NULL) throw new NullOperatorException();
 		_target->evaluate(operands);
 	};

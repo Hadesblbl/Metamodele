@@ -14,7 +14,7 @@ namespace fuzzy {
 	public:
 		SugenoConclusion(std::vector<T>);
 		virtual ~SugenoConclusion();
-		T evaluate(std::vector<Expression<T>*>) const;
+		virtual T evaluate(std::vector<Expression<T>*>) const;
 	};
 
 	template<class T>
@@ -25,7 +25,6 @@ namespace fuzzy {
 	template<class T>
 	SugenoConclusion<T>::~SugenoConclusion()
 	{
-		delete coeff;
 	};
 
 	template<class T>
@@ -41,7 +40,7 @@ namespace fuzzy {
 			conclusion += coeff.back();
 			return conclusion;
 		}
-		std::cout << "Mauvais nombre de coefficients ou d'operandes";
+		std::cout << "Mauvais nombre de coefficients ou d'operandes" << std::endl;
 		return NULL;
 	};
 };

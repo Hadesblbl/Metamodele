@@ -7,6 +7,7 @@
 #include "NaryExpression.h"
 #include "UnaryExpressionModel.h"
 #include "BinaryExpressionModel.h"
+#include "NaryExpressionModel.h"
 #include <vector>
 
 using namespace std;
@@ -18,9 +19,9 @@ namespace core {
 		//ExpressionFactory() {};
 		~ExpressionFactory();
 		Expression<T>* hold(Expression<T>*);
-		Expression<T>* newUnary(UnaryExpression<T>*, Expression<T>*);
-		Expression<T>* newBinary(BinaryExpression<T>*, Expression<T>*, Expression<T>*);
-		//Expression<T>* newNary(NaryExpression<T>*,std::vector<Expression<T>*>*);
+		UnaryExpressionModel<T>* newUnary(UnaryExpression<T>*, Expression<T>*);
+		BinaryExpressionModel<T>* newBinary(BinaryExpression<T>*, Expression<T>*, Expression<T>*);
+		NaryExpressionModel<T>* newNary(NaryExpression<T>*,std::vector<Expression<T>*>);
 
 	private:
 		vector<Expression<T>*> memory;
@@ -42,15 +43,18 @@ namespace core {
 	};
 
 	template<class T>
-	Expression<T>* ExpressionFactory<T>::newUnary(UnaryExpression<T>* ope, Expression<T>* o) {
-		return this->hold(new UnaryExpressionModel<T>(ope, o));
+	UnaryExpressionModel<T>* ExpressionFactory<T>::newUnary(UnaryExpression<T>* ope, Expression<T>* o) {
+		return new UnaryExpressionModel<T>(ope, o);
 	};
 
 	template<class T>
-	Expression<T>* ExpressionFactory<T>::newBinary(BinaryExpression<T>* ope, Expression<T>* l, Expression<T>* r) {
-		return this->hold(new BinaryExpressionModel<T>(ope, l, r));
+	BinaryExpressionModel<T>* ExpressionFactory<T>::newBinary(BinaryExpression<T>* ope, Expression<T>* l, Expression<T>* r) {
+		return new BinaryExpressionModel<T>(ope, l, r);
 	};
-}
-//newNary
 
+	template <class T> 
+	NaryExpressionModel<T>* ExpressionFactory<T>::newNary(NaryExpression<T>* ope, std::vector<Expression<T>*> exp) {
+		return new NaryExpressionModel<T>(ope, exp);
+	};
+};
 #endif

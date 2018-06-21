@@ -4,12 +4,13 @@
 #include "Then.h"
 #include "Expression.h"
 
-namespace core {
+using namespace core;
+namespace fuzzy {
 
 	template<class T>
-	class SugenoThen : public Then {
+	class SugenoThen : public Then<T> {
 	public:
-		SugenoThen() :premiseValue(0) {};
+		SugenoThen() : _premiseValue(0) {};
 		virtual ~SugenoThen();
 		T evaluate(Expression<T> *, Expression<T> *) const;
 		T premiseValue();
@@ -19,12 +20,11 @@ namespace core {
 
 	template <class T>
 	SugenoThen<T>::~SugenoThen() {
-		delete _premiseValue
 	};
 
 	template <class T>
 	T SugenoThen<T>::evaluate(Expression<T>* l, Expression<T>* r) const {
-		premiseValue = l->evaluate();
+		T premiseValue = l->evaluate();
 		return premiseValue * r->evaluate();
 	};
 
@@ -33,5 +33,4 @@ namespace core {
 		return _premiseValue;
 	};
 };
-
 #endif

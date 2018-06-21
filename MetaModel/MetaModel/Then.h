@@ -8,9 +8,6 @@ using namespace core;
 namespace fuzzy
 {
 	template <class T>
-	class Then : public BinaryExpression<T> {
-	public:
-		virtual ~Then() {}
-	};
-}
+	class Then : public BinaryExpression<T> {};
+};
 #endif /* Then_h */

@@ -12,40 +12,40 @@
 #include "Or.h"
 
 #include "CogDefuzz.h"
+#include "SugenoDefuzz.h"
 
 #include "UnaryShadowExpression.h"
 #include "BinaryShadowExpression.h"
 #include "NaryShadowExpression.h"
 
 using namespace core;
-
-
 namespace fuzzy
 {
 	template<class T>
 	class FuzzyFactory : public ExpressionFactory<T> {
 	public:
-		FuzzyFactory(Not<T>* _not, And<T>* _and, Or<T>* _or, Then<T>* _then, Agg<T>* _agg, CogDefuzz<T>* _defuzz) : 
+		FuzzyFactory(Not<T>* _not, And<T>* _and, Or<T>* _or, Then<T>* _then, Agg<T>* _agg, CogDefuzz<T>* _defuzz,SugenoDefuzz<T>* _sugeno) : 
 			_not(new UnaryShadowExpression<T>(_not)),
 			_and(new BinaryShadowExpression<T>(_and)),
 			_or(new BinaryShadowExpression<T>(_or)),
 			_then(new BinaryShadowExpression<T>(_then)),
 			_agg(new BinaryShadowExpression<T>(_agg)),
-			_defuzz(new BinaryShadowExpression<T>(_defuzz))
+			_defuzz(new BinaryShadowExpression<T>(_defuzz)),
+			_sugeno(new NaryShadowExpression<T>(_sugeno))
 		{};
 
 		ValueModel<T>* newValue(T);
 
 		virtual ~FuzzyFactory();
 
-		Expression<T>* newAnd(Expression<T>*, Expression<T>*);
-		Expression<T>* newOr(Expression<T>*, Expression<T>*);
-		Expression<T>* newThen(Expression<T>*, Expression<T>*);
-		Expression<T>* newAgg(Expression<T>*, Expression<T>*);
-		Expression<T>* newDefuzz(Expression<T>*, Expression<T>*, const T&, const T&, const T&);
-		Expression<T>* newNot(Expression<T>*);
-		Expression<T>* newIs(Expression<T>*, Is<T>*);
-		NaryExpression<T>* newSugeno(std::vector<Expression<T>*>);
+		BinaryExpressionModel<T>* newAnd(Expression<T>*, Expression<T>*);
+		BinaryExpressionModel<T>* newOr(Expression<T>*, Expression<T>*);
+		BinaryExpressionModel<T>* newThen(Expression<T>*, Expression<T>*);
+		BinaryExpressionModel<T>* newAgg(Expression<T>*, Expression<T>*);
+		BinaryExpressionModel<T>* newDefuzz(Expression<T>*, Expression<T>*, const T&, const T&, const T&);
+		UnaryExpressionModel<T>* newNot(Expression<T>*);
+		UnaryExpressionModel<T>* newIs(Expression<T>*, Is<T>*);
+		NaryExpressionModel<T>* newSugeno(std::vector<Expression<T>*>);
 
 		void changeAnd(And<T>*);
 		void changeOr(Or<T>*);
@@ -82,33 +82,32 @@ namespace fuzzy
 	};
 
 	template<class T>
-	Expression<T>* FuzzyFactory<T>::newAnd(Expression<T>* l, Expression<T>* r) {
-		return newBinary(_and, l, r);
+	BinaryExpressionModel<T>* FuzzyFactory<T>::newAnd(Expression<T>* l, Expression<T>* r) {
+		return this->newBinary(_and, l, r);
 	};
 
 	template<class T>
-	Expression<T>* FuzzyFactory<T>::newOr(Expression<T>* l, Expression<T>* r) {
-		return newBinary(_or , l, r);
+	BinaryExpressionModel<T>* FuzzyFactory<T>::newOr(Expression<T>* l, Expression<T>* r) {
+		return this->newBinary(_or , l, r);
 	};
 
 	template<class T>
-	Expression<T>* FuzzyFactory<T>::newThen(Expression<T>* l, Expression<T>* r) {
+	BinaryExpressionModel<T>* FuzzyFactory<T>::newThen(Expression<T>* l, Expression<T>* r) {
 		return this->newBinary(_then, l, r);
 	};
 
 	template<class T>
-	Expression<T>* FuzzyFactory<T>::newAgg(Expression<T>* l, Expression<T>* r) {
+	BinaryExpressionModel<T>* FuzzyFactory<T>::newAgg(Expression<T>* l, Expression<T>* r) {
 		return this->newBinary(_agg, l, r);
 	};
 
-
 	template<class T>
-	Expression<T>* FuzzyFactory<T>::newNot(Expression<T>* o) {
+	UnaryExpressionModel<T>* FuzzyFactory<T>::newNot(Expression<T>* o) {
 		return this->newUnary(_not, o);
 	};
 
 	template<class T>
-	Expression<T>* FuzzyFactory<T>::newDefuzz(Expression<T>* l, Expression<T>* r, const T& min, const T& max, const T& step) {
+	BinaryExpressionModel<T>* FuzzyFactory<T>::newDefuzz(Expression<T>* l, Expression<T>* r, const T& min, const T& max, const T& step) {
         CogDefuzz<T>* cogdefuzz=(CogDefuzz<T>*) _defuzz->getTarget();
 		cogdefuzz->setMin(min);
 		cogdefuzz->setMax(max);
@@ -116,9 +115,13 @@ namespace fuzzy
 		return this->newBinary(_defuzz, l, r);
 	};
 
+	template<class T>
+	NaryExpressionModel<T>* FuzzyFactory<T>::newSugeno(std::vector<Expression<T>*> sug) {
+		return this->newNary(_sugeno, sug);
+	};
 
 	template<class T>
-	Expression<T>* FuzzyFactory<T>::newIs(Expression<T>* o, Is<T>* i) {
+	UnaryExpressionModel<T>* FuzzyFactory<T>::newIs(Expression<T>* o, Is<T>* i) {
 		return this->newUnary(i, o);
 	};
 
@@ -156,5 +159,5 @@ namespace fuzzy
 	void FuzzyFactory<T>::changeDefuzz(BinaryExpression<T>* o) {
 		_defuzz->setTarget(o);
 	};
-}
+};
 #endif

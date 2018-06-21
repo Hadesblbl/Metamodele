@@ -13,8 +13,8 @@ namespace fuzzy {
 		std::vector<SugenoConclusion<T>*> conclusions;
 	public:
 		SugenoDefuzz(std::vector<SugenoConclusion<T>*>);
-		virtual SugenoDefuzz();
-		T evaluate(std::vector<Expression<T>*>) const;
+		virtual ~SugenoDefuzz();
+		virtual T evaluate(std::vector<Expression<T>*>) const;
 	};
 
 	template<class T>
@@ -25,20 +25,22 @@ namespace fuzzy {
 	template<class T>
 	SugenoDefuzz<T>::~SugenoDefuzz()
 	{
-		delete conclusions;
 	};
 
 	template<class T>
 	T SugenoDefuzz<T>::evaluate(std::vector<Expression<T>*> operands) const
 	{
 		T x, y, num = 0, den = 0;
+
 		for (unsigned int i = 2; i < (operands.size()); i++) {
 			x = conclusions.at(i - 2)->evaluate(std::vector<Expression<T>*>({ operands.at(0),operands.at(1) }));
 			y = operands.at(i)->evaluate();
-			num += x * y;
+			std::cout << "x: " << x << " ,y: " << y << std::endl;
+			num += (x * y);
 			den += y;
-		}
-		return num / den;
+		};
+		std::cout << "num: " << num << " ,den: " << den << std::endl;
+		return num / end;
 	};
 };
 #endif
