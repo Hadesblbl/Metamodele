@@ -35,11 +35,9 @@ namespace fuzzy {
 		for (unsigned int i = 2; i < (operands.size()); i++) {
 			x = conclusions.at(i - 2)->evaluate(std::vector<Expression<T>*>({ operands.at(0),operands.at(1) }));
 			y = operands.at(i)->evaluate();
-			std::cout << "x: " << x << " ,y: " << y << std::endl;
 			num += (x * y);
 			den += y;
 		};
-		std::cout << "num: " << num << " ,den: " << den << std::endl;
 		return num / den;
 	};
 };
